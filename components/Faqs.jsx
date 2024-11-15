@@ -20,8 +20,7 @@ const FAQ = () => {
     },
     {
       question: "Can you assist with assignments from different subjects or specialisations?",
-      answer: `Absolutely! Whether you need help with science, literature, business, or any other subject, our experts cover a wide range of topics, ensuring every assignment is thoroughly researched and perfectly crafted.
-`,
+      answer: `Absolutely! Whether you need help with science, literature, business, or any other subject, our experts cover a wide range of topics, ensuring every assignment is thoroughly researched and perfectly crafted.`,
     },
    
     {
@@ -44,20 +43,14 @@ const FAQ = () => {
   ];
 
   return (
-<div
-  className=" bg-no-repeat mx-auto 2xl:bg-[url('/resizefaq.png')] xl:bg-[url('/resizefaq.png')] xl:bg-right-bottom xl:bg-auto 2xl:bg-auto 2xl:bg-right-bottom    "
-  // style={{
-  //   backgroundPosition: 'right bottom',
-  // }}
->   <h2 className="flex justify-center items-center md:text-[28px] text-xl font-bold py-10 px-10 md:mx-0 mx-10 leading-relaxed tracking-widest  ">
-        Frequently   <span className="text-secondaryRed px-1">    Asked    </span> Questions
-      </h2>
-      <div className="md:grid xl:grid-cols-2 md:grid-cols-1 md:mx-10 px-2 md:h-[1000px] 2xl:h-[800px] xl:h-[800px] h-[600px] md:mt-10 mt-5 flex justify-center items-start
-      xl:pb-[1000px] 2xl:pb-0">
+    <div className="flex">   
+      
+      <div className="md:grid xl:grid-cols-2 md:grid-cols-1 md:mx-10 xl:mx-4 2xl:mx-20 px-2 md:h-[1000px]  lg:h-[750px] h-[600px] flex justify-center items-start
+       2xl:pb-0 ">
         {/* First Grid */}
         <div id="accordion-open" className="flex flex-col md:gap-10 gap-4 transition-all duration-100 ">
           {faqItems.map((item, index) => (
-            <div key={index} className="border rounded-lg shadow md:mx-2  2xl:w-full md:w-full xl:w-[700px] w-[350px]">
+            <div key={index} className="border rounded-lg shadow md:mx-2  2xl:w-[700px] md:w-full xl:w-[600px] lg:w-[700px] w-[350px]">
               <h2 id={`accordion-open-heading-${index}`}>
                 <button
                   type="button"
@@ -66,7 +59,7 @@ const FAQ = () => {
                   aria-expanded={open === index}
                   aria-controls={`accordion-open-body-${index}`}
                 >
-                  <span className="flex justify-start items-start text-secondaryRed lg:text-[16px] md:text-[15px] text-[14px]">
+                  <span className="flex justify-start items-start text-secondaryRed lg:text-[16px] md:text-[15px] text-[14px] font-semibold">
                     {item.question}
                   </span>
                   {/* svg arrow */}
@@ -95,7 +88,7 @@ const FAQ = () => {
                 aria-labelledby={`accordion-open-heading-${index}`}
               >
                 <div className="p-5 mx-2 border border-r-0 border-l-0 border-b-0 border-t-1 border-t-red-600">
-                  <p className="mb-2 text-gray-500">{item.answer}</p>
+                  <p className="mb-2 text-red-600">{item.answer}</p>
                   {item.linkText && item.linkHref && (
                     <p className="text-gray-500 dark:text-gray-400">
                       <a
@@ -118,6 +111,17 @@ const FAQ = () => {
           <Image src="/faqimage.png" width="2000" height="2000" />
         </div>
         </foreignObject> */}
+      </div>
+
+      {/* tasweer */}
+      <div className="w-full hidden xl:block relative pr-20">
+        <Image
+          src="/faqimage.png"
+          alt=""
+          height={1000}
+          width={1000}
+          className="h-[300px] xl:h-[700px] absolute bottom-0 right-20 xl:-right-1"
+        />
       </div>
     </div>
   );
