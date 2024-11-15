@@ -64,10 +64,10 @@ function Services1() {
     }, [targetValue, duration]);
 
     return (
-        <div className="px-2 lg:px-8 xl:px-16 mt-32">
+        <div className="px-4 lg:px-8 xl:px-16 2xl:px-32 mt-44 w-full overflow-hidden">
             {/* First Section */}
             <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
-                <div className="lg:max-w-xl lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
+                <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
                     <h1 className="text-[40px] md:text-5xl font-bold text-textColor leading-tight">
                         Lorem ipsum dolor sit amet <span className="text-red-500">consectetur</span> adipisicing elit.
                         <span className="text-primaryBlue">Quam,</span> tenetur?
@@ -79,7 +79,7 @@ function Services1() {
                         hic dolorem laboriosam earum cupiditate.
                     </p>
                     <div className="mt-6 mx-auto lg:mx-0 w-3/4 lg:w-full">
-                        <Image src="/Reviews.png" alt="Reviews" width={600} height={100} className="w-full" />
+                        <Image src="/Reviews.png" alt="Reviews" width={600} height={100} className="w-auto" />
                     </div>
                 </div>
                 <div className="flex justify-center w-full lg:w-auto mx-auto">
@@ -88,7 +88,7 @@ function Services1() {
             </div>
 
             {/* Second Section */}
-            <div className="mt-16  flex flex-col lg:flex-row items-start gap-24  w-full lg:w-[950px] xl:w-[1200px] 2xl:w-[1500px]">
+            <div className="mt-16  flex flex-col lg:flex-row items-start gap-24  w-full lg:w-[950px] xl:w-[1200px] 2xl:w-[1500px] ml-5 2xl:ml-32">
                 <div className="flex-1">
                     <h2 className="font-bold text-2xl md:text-3xl">
                         Revolutionize your experience with our modern offerings:
@@ -141,9 +141,9 @@ function Services1() {
             </div>
 
             {/* Fourth Section */}
-            <div className="mt-16">
+            {/* <div className="mt-16">
                 <Writers />
-            </div>
+            </div> */}
 
             {/* Fifth Section */}
             <div className="mt-16">
