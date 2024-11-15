@@ -1,7 +1,9 @@
 
 import Image from "next/image";
-import TawktoButton from "./TawkToButton";
+// import TawktoButton from "./TawkToButton";
 import { ArrowRight } from "lucide-react";
+
+import { IoPaperPlaneOutline } from 'react-icons/io5';
 
 function CTA1({ heading, span, heading2, paragraph }) {
   return (
@@ -16,8 +18,20 @@ function CTA1({ heading, span, heading2, paragraph }) {
             {paragraph}
           </p>
           <div className="flex flex-row pt-4 md:mx-0 mx-1 gap-4 md:mr-2 md:justify-start md:items-center">
-            <TawktoButton  mdWidth={300} Width={150} Height={100}/>
-            <button className="border-2 font-bold border-secondaryRed text-red hover:bg-secondaryRed text-secondaryRed hover:text-white py-2 px-2 lg:w-40 md:w-36 md:min-h-max w-[10rem] h-[3rem] rounded-md flex flex-row justify-center transition-all group-hover:translate-x-1">
+            {/* <TawktoButton  mdWidth={300} Width={150} Height={100}/> */}
+
+            <button className="bg-blue-500 flex items-center  font-bold text-white px-6 sm:px-8 md:px-10
+             py-3  rounded-xl hover:bg-blue-900 group">
+            <span className="transform transition-transform mr-2 sm:mr-3 duration-500 group-hover:-translate-x-2">
+                LIVE CHAT
+            </span>
+            <IoPaperPlaneOutline className="transform transition-transform duration-500 group-hover:translate-x-2 text-xl" />
+        </button>
+
+        {/* py-2 px-2 lg:w-40 md:w-36 md:min-h-max w-[10rem] h-[3rem] */}
+
+            <button className="border-2 font-bold border-secondaryRed text-red hover:bg-secondaryRed text-secondaryRed
+             hover:text-white py-3 px-6 sm:px-8 md:px-10 rounded-xl flex flex-row justify-center transition-all group-hover:translate-x-1">
               Order Now
               <div>
                 <ArrowRight className="hover:translate-x-1 transition-all" />

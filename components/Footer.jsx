@@ -26,6 +26,7 @@ function Footer() {
                 {/* Logo */}
                 <Image
                     src="/Logo.png"
+                    alt=""
                     width="400"
                     height="400"
                   
@@ -38,14 +39,17 @@ function Footer() {
 
                    <Image
                         src="/footer4.png"
+                        alt=""
                         height="80"
                         width="80" />
                     <Image
                         src="/footer6.png"
+                        alt=""
                         height="80"
                         width="80" />
                     <Image
                         src="/footer7.png"
+                        alt=""
                         height="80"
                         width="80" />
 
@@ -57,16 +61,19 @@ function Footer() {
 
                    <Image
                         src="/footerwesternunion.png"
+                        alt=""
                         height="80"
                         width="80" />
 
                     <Image
                         src="/footer3.png"
+                        alt=""
                         height="80"
                         width="80" />
 
                     <Image
                         src="/footer2.png"
+                        alt=""
                         height="80"
                         width="80" />
 
@@ -86,6 +93,7 @@ function Footer() {
                     <div className="flex flex-row gap-2 md:justify-center md:items-center lg:justify-start lg:items-start ">
                         <Image
                             src='/location-dot-solid 1.svg'
+                        alt=""
                             height="30"
                             width="30"
                         />
@@ -140,7 +148,10 @@ function Footer() {
                 </div>
                 <div className="text-white  flex-col justify-center items-center md:flex hidden">
                     <span className="font-bold text-2xl text-white text-center">Services</span>
-                    <ul className="underline flex flex-col justify-center items-center mx-10" >
+                    <ul className="underline flex flex-col justify-center items-center mx-20" >
+                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
