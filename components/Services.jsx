@@ -47,10 +47,10 @@ function Services() {
         <div className="hidden xl:flex justify-center items-end -mx-6 ">
           <Image
             src="/Red_Girl.png"
-            width={400}
-            height={1000}
+            width={300}
+            height={600}
             alt="Girl Holding Books"
-            className="2xl:h-[1000px] 2xl:w-[400px] xl:h-[800px] xl:w-[450px]  "
+            className="2xl:h-[1000px] 2xl:w-[500px] xl:h-[800px] xl:w-[450px]  "
           />
         </div>
 
