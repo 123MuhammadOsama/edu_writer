@@ -126,66 +126,60 @@ function Footer() {
 
 
             {/* Links for Higher Width Screens  */}
-            <div className="md:flex flex-row  my-5 gap-10  hidden">
-                <div className="text-white flex flex-col justify-center items-center md:-ml-20 lg:-ml-36">
-                    <span className="font-bold text-2xl text-white  md:text-center">Useful Links</span>
-                    <ul className="underline ">
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <div className="md:flex flex-row my-5 gap-10 hidden">
+    <div className="text-white flex flex-col justify-center items-center md:-ml-24 lg:-ml-32 flex-1">
+        <span className="font-bold text-2xl text-white md:text-center">Useful Links</span>
+        <ul className="underline">
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+        </ul>
+    </div>
+    <div className="text-white flex-col justify-center items-center md:flex hidden flex-1">
+        <span className="font-bold text-2xl text-white text-center">Services</span>
+        <ul className="underline">
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+        </ul>
+    </div>
+    <div className="text-white flex flex-col justify-center items-center flex-1">
+        <span className="font-bold text-2xl text-white">Other Services</span>
+        <ul className="underline">
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+        </ul>
+    </div>
+</div>
 
-
-                    </ul>
-                </div>
-                <div className="text-white  flex-col justify-center items-center md:flex hidden">
-                    <span className="font-bold text-2xl text-white text-center">Services</span>
-                    <ul className="underline " >
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-
-
-                    </ul>
-                </div>
-                <div className="text-white md:flex  flex-col justify-center items-center  hidden">
-                    <span className="font-bold text-2xl text-white ">Other Services </span>
-                    <ul className="underline">
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-
-
-                    </ul>
-                </div>
-            </div>
             {/* Links for smaller screens  */}
             <div className="mx-auto md:hidden  bg-[#242424]  my-5 flex flex-col ">
                 <div className="relative">

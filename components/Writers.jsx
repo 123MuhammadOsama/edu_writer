@@ -138,7 +138,7 @@ function Writers() {
                         </CarouselItem>
 
                         <CarouselItem className="xl:basis-1/4 md:basis-1/2 lg:basis-1/2 ">
-                            <div className="h-[350px] w-[280px] shadow-lg border border-gray-100 p-0 bg-white rounded-2xl mb-9 md:m-0 mx-4  md:-mr-0 -mr-14  ">           
+                            <div className="h-[350px] w-[200px] shadow-lg border border-gray-100 p-0 bg-white rounded-2xl mb-9 md:m-0 mx-4  md:-mr-0 -mr-14  ">           
                              <div className="w-full rounded-t-2xl">
                                     <Image
                                         src={data[4].src}
@@ -160,7 +160,7 @@ function Writers() {
                      <CarouselPrevious className="bg-white text-red-800 text-3xl font-extrabold border-2 shadow md:h-20 md:w-20 
                      flex justify-center items-center 2xl:ml-0 ml-12  lg:ml-10 " />
                      <CarouselNext className="bg-white text-red-800 text-3xl border-2 font-extrabold shadow md:h-20 md:w-20 flex
-                      justify-center items-center 2xl:mr-0 mr-12  lg:mr-10 md:mr-48" />
+                      justify-center items-center 2xl:mr-10 xl:mr-96 mr-12  lg:mr-10 md:mr-48" />
 
                 </Carousel>
             </div>

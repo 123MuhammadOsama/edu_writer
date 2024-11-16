@@ -44,7 +44,7 @@ const Academic = () => {
       </div>
             {/* scond */}
       <div>
-      <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-2">
         {challenges.map((challenge, index) => (
           <div key={index} className="bg-white p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
