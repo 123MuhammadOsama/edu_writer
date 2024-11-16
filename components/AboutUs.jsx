@@ -11,58 +11,56 @@ function AboutUs() {
       <>
 
       {/* Section 1  */}
-        <section className="mt-20 flex lg:flex-row flex-col lg:justify-start lg:items-center justify-center items-center xl:px-36 px-5 w-full" >
-        
-          <div className="xl:max-w-3xl md:max-w-3xl lg:max-w-lg">
-            <h1 className="md:text-[40px] font-bold text-textColor text-3xl pb-2 ">From   
-            < span className="text-red-500"> Overwhelmed </span>to  <span className="text-primaryBlue">On-Top-Not, </span> a Dream, Just What We Do!</h1>
-            <p className="md:text-[16px] text-textColor text-[14px]">From messy drafts to polished perfection, we craft your path to non-stop excellence with a magical flair. Let’s turn your brilliant words into an A+ masterpiece, one assignment at a time. No more sleepless nights—just results that put you back on top!
-            </p>
-            <div className="mt-10">
-              <Image
-                src="/Reviews.png"
-                width="600"
-                height="200"
-                alt="Trust Pilot"
-              />
-            </div>
-          
+      <section className=" flex lg:flex-row flex-col justify-center items-center xl:px-36 px-5 w-full">
+  <div className="xl:max-w-xl md:max-w-3xl lg:max-w-lg">
+    <h1 className="md:text-[40px] font-bold text-textColor text-3xl pb-2">
+      From <span className="text-red-500">Overwhelmed</span> to <span className="text-primaryBlue">On-Top-Not, </span> a Dream, Just What We Do!
+    </h1>
+    <p className="md:text-[16px] text-textColor text-[14px]">
+      From messy drafts to polished perfection, we craft your path to non-stop excellence with a magical flair. Let’s turn your brilliant words into an A+ masterpiece, one assignment at a time. No more sleepless nights—just results that put you back on top!
+    </p>
+    <div className="mt-10">
+      <Image
+        src="/Reviews.png"
+        width="600"
+        height="200"
+        alt="Trust Pilot"
+      />
+    </div>
+  </div>
 
-          </div>
+  <div className="max-w-full flex-1 p-4 lg:mx-auto 2xl:max-w-3xl 2xl:ml-32 xl:max-w-md bg-transparent font-serif lg:w-full mb-10 hidden lg:block">
+    <Image
+      src="/Aboutus1.png"
+      alt="About Us"
+      className="lg:h-[400px] lg:w-[400px] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] object-cover mx-auto"
+      height="600"
+      width="600"
+    />
+  </div>
+</section>
 
-          <div className="max-w-full flex-1 p-4 lg:mx-auto 2xl:max-w-xl 2xl:ml-10 xl:max-w-md bg-transparent font-serif   lg:w-fit  mb-10 ">
-            {/* <p className="text-center underline underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r to-blue from-darkblue text-lg font-semibold">Your Story is One <span className="decoration decoration-dashed decoration-slate-200"> Click Away</span> From Being Told</p> */}
-           
-            <Image
-              src="/Aboutus1.png"
-              className="lg:h-[400px] lg:w-[500px] 2xl:h-[400px] 2xl:w-[600px] xl:h-[200px] xl:w-[700px] "
-              height="600"
-              width="600"
-              />
-
-          </div>
-
-
-        </section>
 
         {/* Section2 */}
 
-        <section className="mt-09 flex lg:flex-row flex-col lg:justify-start lg:items-center justify-center items-center xl:px-36 px-5  w-full" >
+        <section className="mt-09 flex lg:flex-row flex-col lg:justify-start lg:items-center justify-center items-center xl:px-20 2xl:px-36 px-5  w-full" >
         
       
 
-          <div className="max-w-full flex-1 p-4 lg:mx-auto 2xl:max-w-xl 2xl:ml-10 xl:max-w-md bg-transparent font-serif   lg:w-fit md:w-[700px] md:mx-auto  mb-10 ">
+          <div className="max-w-full flex-1 p-4 lg:mx-auto 2xl:max-w-xl 2xl:ml-10 xl:max-w-xl  bg-transparent font-serif   lg:w-fit md:w-[700px] md:mx-auto  mb-10 
+          hidden lg:block">
             {/* <p className="text-center underline underline-offset-8 text-transparent bg-clip-text bg-gradient-to-r to-blue from-darkblue text-lg font-semibold">Your Story is One <span className="decoration decoration-dashed decoration-slate-200"> Click Away</span> From Being Told</p> */}
            
             <Image
               src="/Aboutus.png"
-              className=" md:flex md:justify-center md:items-center md:mx-auto lg:h-[400px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[600px] xl:h-[310px] xl:w-[540px] "
+              alt=""
+              className=" md:flex md:justify-center md:items-center md:mx-auto lg:h-[600px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[600px] xl:h-[500px] xl:w-[750px] "
               height="400"
               width="500"
               />
 
           </div>
-          <div className="xl:max-w-3xl md:max-w-3xl lg:max-w-xl  ">
+          <div className="xl:max-w-xl 2xl:max-w-3xl md:max-w-3xl lg:max-w-lg ">
             <h2 className="text-4xl font-bold "> <span className="text-primaryBlue ">
             Academic MVPs  </span> You Didn’t Know You Needed
             </h2>
@@ -89,7 +87,7 @@ function AboutUs() {
           </section>
           {/* Writers */}
           <Writers />
-          <section className="flex md:flex-row md:gap-1 flex-col ">
+          <section className="flex lg:flex-row gap-5 lg:gap-1 flex-col mx-5 xl:mx-20 2xl:mx40 mt-20">
             <div className="px-5 lg:w-1/2 ">
               <h2 className=" text-3xl"> <span className="text-primaryBlue font-bold "> Mission Possible: </span> Helping You <span className="text-secondaryRed">Crush Your Goals </span> Since Day One!
               </h2>
