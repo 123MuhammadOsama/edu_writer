@@ -1,7 +1,5 @@
 'use client';
 import Image from "next/image";
-import TawktoButton from "@/components/TawkToButton";
-import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import CTA1 from "@/components/CTA1";
 import Writers from "@/components/Writers";
@@ -16,7 +14,6 @@ function Services1() {
     const targetValue = 75;
     const duration = 3000;
 
-    // Calculate increment for each counter based on duration and target
     const calculateIncrement = (start, end, duration) => {
         const stepCount = duration / 30; // 30ms interval
         return (end - start) / stepCount;
@@ -34,7 +31,7 @@ function Services1() {
         const startCounter = (setCounter, intervalRef, targetValue, increment) => {
             clearInterval(intervalRef.current);
             intervalRef.current = setInterval(() => {
-                setCounter(prevValue => {
+                setCounter((prevValue) => {
                     const nextValue = prevValue + increment;
                     if (nextValue >= targetValue) {
                         clearInterval(intervalRef.current);
@@ -50,12 +47,10 @@ function Services1() {
         startCounter(setProjects, projectsInterval, targetValue, projectsIncrement);
         startCounter(setCustomers, customersInterval, targetValue, customersIncrement);
 
-        // Store the current interval references for cleanup
         const assignmentsRef = assignmentsInterval.current;
         const projectsRef = projectsInterval.current;
         const customersRef = customersInterval.current;
 
-        // Clear intervals on component unmount
         return () => {
             clearInterval(assignmentsRef);
             clearInterval(projectsRef);
@@ -64,7 +59,7 @@ function Services1() {
     }, [targetValue, duration]);
 
     return (
-        <div className="px-4 lg:px-8 xl:px-16 2xl:px-32 mt-44 w-full overflow-hidden">
+        <div className="px-4 lg:px-8 xl:px-16 2xl:px-32 mt-10 w-full overflow-hidden">
             {/* First Section */}
             <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
                 <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
@@ -87,65 +82,72 @@ function Services1() {
                 </div>
             </div>
 
-            {/* Second Section */}
-            <div className="mt-16  flex flex-col lg:flex-row items-start gap-24  w-full lg:w-[950px] xl:w-[1200px] 2xl:w-[1500px] ml-5 2xl:ml-32">
-                <div className="flex-1">
-                    <h2 className="font-bold text-2xl md:text-3xl">
-                        Revolutionize your experience with our modern offerings:
-                    </h2>
-                    <p className="mt-4 text-base md:text-lg w-auto lg:w-[600px]">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, molestiae sequi voluptate sapiente earum maiores ab voluptatem exercitationem modi! Libero explicabo iusto vel dignissimos odit, asperiores in animi totam aperiam aut. Amet voluptas harum sunt aliquam assumenda, officiis similique eaque!
+            {/* Section Container */}
+            {/* Section Container */}
+<div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-16">
+    {/* Content Section */}
+    <div className="flex-1">
+        <h2 className="font-bold text-2xl md:text-3xl">
+            Revolutionize your experience with our modern offerings:
+        </h2>
+        <p className="mt-4 text-base md:text-lg w-auto lg:w-[600px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, molestiae sequi voluptate sapiente earum maiores ab voluptatem exercitationem modi! Libero explicabo iusto vel dignissimos odit, asperiores in animi totam aperiam aut. Amet voluptas harum sunt aliquam assumenda, officiis similique eaque!
+        </p>
+        <ul className="mt-6 space-y-6">
+            {[1, 2, 3, 4].map((i) => (
+                <li key={i} className="flex items-start gap-4">
+                    <Image src={`/service${i}.png`} alt="" width="50" height="50" className="flex-shrink-0" />
+                    <p className="w-auto xl:w-[600px]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste numquam explicabo maiores officiis nostrum esse dignissimos, sequi enim minus alias repellat deleniti laboriosam rerum incidunt velit, mollitia sint? Dolorem, aliquam?
                     </p>
-                    <ul className="mt-6 space-y-6">
-                        {[1, 2, 3, 4].map(i => (
-                            <li key={i} className="flex items-start gap-4">
-                                <Image src={`/service${i}.png`} alt="" width="50" height="50" className="flex-shrink-0" />
-                               <p className="w-auto xl:w-[600px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste numquam explicabo maiores officiis nostrum esse dignissimos, sequi enim minus alias repellat deleniti laboriosam rerum incidunt velit, mollitia sint? Dolorem, aliquam?
-                                </p>
-                            </li>
-                       ))}
-                    </ul>
-                </div>
+                </li>
+            ))}
+        </ul>
+    </div>
 
-                {/* Counter Section */}
-            <div className="flex justify-center w-auto md:w-auto mx-auto mr-auto xl:mr-[100px] ">
-                    <div className="shadow-lg border rounded-xl p-6 flex flex-col items-center w-full max-w-sm">
-                        <h2 className="font-bold text-xl text-center">15+ Years of Excellence</h2>
-                        <p className="text-center mt-2 mb-8">Lorem ipsum, dolor sit amet consectetu</p>
-                        <div className="space-y-10">
-                            {[{ title: "Assignments Experts", count: assignments }, { title: "Successful Projects", count: projects }, { title: "Customer Satisfaction", count: customers + '%' }].map(({ title, count }, idx) => (
-                               <div key={idx} className="flex flex-col items-center">
-                                    <span className="text-4xl text-primaryBlue font-bold">{Math.floor(count)}+</span>
-                                    <p className="text-center">{title}</p>
-                                </div>
-                            ))}
-                        </div>
+    {/* Card Timer Section */}
+    <div className="w-full flex-1 flex justify-center md:flex-row  items-center 2xl:ml-60 mt-8">
+        <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
+            <h2 className="font-bold text-3xl text-center">15+ Years of Excellence</h2>
+            <p className="text-center mt-2 mb-8">Lorem ipsum, dolor sit amet consectetu</p>
+            <div className="space-y-16">
+                {[
+                    { title: "Assignments Experts", count: assignments, suffix: "+" },
+                    { title: "Successful Projects", count: projects, suffix: "+" },
+                    { title: "Customer Satisfaction", count: customers, suffix: "%" },
+                ].map(({ title, count, suffix }, idx) => (
+                    <div key={idx} className="flex flex-col items-center">
+                        <span className="text-6xl text-primaryBlue font-bold">
+                            {Math.floor(count)}
+                            {suffix}
+                        </span>
+                        <p className="text-center">{title}</p>
                     </div>
-                </div>
+                ))}
             </div>
+        </div>
+    </div>
+</div>
 
-            {/* Third Section */}
+
+            {/* Other Sections */}
             <div className="mt-16">
-                <CTA1 heading="Turn Homework Panic into"
+                <CTA1
+                    heading="Turn Homework Panic into"
                     span="Academic Power"
                     heading2="with One Click!"
                     paragraph="When Life Gets Busy and Assignments Get Tough, We're the Secret to Keeping Your Grades on Top! Because Late Nights and Last-Minute Cramming Are So Last Semester—Let’s Get You Ahead, Stress-Free!"
                 />
             </div>
             <div>
-                <Academic/>
+                <Academic />
             </div>
             <div>
-                <Experince/>
+                <Experince />
             </div>
-
-            {/* Fourth Section */}
             <div className="mt-16">
                 <Writers />
             </div>
-
-            {/* Fifth Section */}
             <div className="mt-16">
                 <Faqs />
             </div>
@@ -154,5 +156,3 @@ function Services1() {
 }
 
 export default Services1;
-
-

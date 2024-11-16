@@ -45,12 +45,12 @@ const FAQ = () => {
   return (
     <div className="flex">   
       
-      <div className="md:grid xl:grid-cols-2 md:grid-cols-1 md:mx-10 xl:mx-4 2xl:mx-20 px-2 md:h-[1000px]  lg:h-[750px] h-[600px] flex justify-center items-start
+      <div className="md:grid xl:grid-cols-2 md:grid-cols-1 md:mx-10 xl:mx-0 2xl:mx-20 px-2 md:h-[1000px] xl:h-[850px] lg:h-[750px] h-[600px] flex justify-center items-start
        2xl:pb-0 ">
         {/* First Grid */}
         <div id="accordion-open" className="flex flex-col md:gap-10 gap-4 transition-all duration-100 ">
           {faqItems.map((item, index) => (
-            <div key={index} className="border rounded-lg shadow md:mx-2  2xl:w-[700px] md:w-full xl:w-[600px] lg:w-[700px] w-[350px]">
+            <div key={index} className="border rounded-lg shadow md:mx-2  2xl:w-[700px] md:w-full xl:w-[500px] lg:w-[700px] w-[350px]">
               <h2 id={`accordion-open-heading-${index}`}>
                 <button
                   type="button"
@@ -59,7 +59,7 @@ const FAQ = () => {
                   aria-expanded={open === index}
                   aria-controls={`accordion-open-body-${index}`}
                 >
-                  <span className="flex justify-start items-start text-secondaryRed lg:text-[16px] md:text-[15px] text-[14px] font-semibold">
+                  <span className="flex justify-start items-start text-start text-secondaryRed lg:text-[16px] md:text-[15px] text-[14px] font-semibold">
                     {item.question}
                   </span>
                   {/* svg arrow */}
@@ -116,11 +116,12 @@ const FAQ = () => {
       {/* tasweer */}
       <div className="w-full hidden xl:block relative pr-20">
         <Image
-          src="/faqimage.png"
+          src="/faq.png"
           alt=""
-          height={1000}
-          width={1000}
-          className="h-[300px] xl:h-[700px] absolute bottom-0 right-20 xl:-right-1"
+          width={400}
+          height={400}
+          
+          className="h-[700px] xl:h-[700px] w-[800px] 2xl:w-[700px] absolute bottom-0 -right-2 "
         />
       </div>
     </div>

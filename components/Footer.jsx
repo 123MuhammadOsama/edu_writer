@@ -20,7 +20,7 @@ function Footer() {
     };
 
     return (
-        <footer className="bg-[#242424] md:grid md:grid-cols-3 z-10  h-min flex flex-col   w-full ">
+        <footer className="bg-[#242424] md:grid md:grid-cols-3 z-10  h-min flex flex-col   w-full md:w-screen">
 
             <div className="md:mx-20 mx-10 md:mt-4  flex flex-col xl:justify-start xl:items-center justify-center items-center">
                 {/* Logo */}
@@ -126,8 +126,8 @@ function Footer() {
 
 
             {/* Links for Higher Width Screens  */}
-            <div className="md:flex flex-row  my-5 gap-1  hidden">
-                <div className="text-white flex flex-col justify-center items-center md:-ml-16">
+            <div className="md:flex flex-row  my-5 gap-10  hidden">
+                <div className="text-white flex flex-col justify-center items-center md:-ml-20 lg:-ml-36">
                     <span className="font-bold text-2xl text-white  md:text-center">Useful Links</span>
                     <ul className="underline ">
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
@@ -148,7 +148,8 @@ function Footer() {
                 </div>
                 <div className="text-white  flex-col justify-center items-center md:flex hidden">
                     <span className="font-bold text-2xl text-white text-center">Services</span>
-                    <ul className="underline flex flex-col justify-center items-center mx-20" >
+                    <ul className="underline " >
+                        <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
                         <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
