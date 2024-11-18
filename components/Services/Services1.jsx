@@ -87,17 +87,17 @@ function Services1() {
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-28 mx-20">
             {/* Content Section */}
             <div className="flex-1 2xl:pt-14 ">
-            <h2 className="font-bold text-2xl md:text-3xl">
+            <h2 className="font-bold text-[26px] lg:text-[28px]">
             Revolutionize your experience with our modern offerings:
         </h2>
-        <p className="mt-4 text-base md:text-lg w-auto 2xl:w-[1000px] xl:w-[600px]">
+        <p className="mt-4 text-[14px] lg:text-[16px] w-auto 2xl:w-[1000px] xl:w-[600px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, molestiae sequi voluptate sapiente earum maiores ab voluptatem exercitationem modi! Libero explicabo iusto vel dignissimos odit, asperiores in animi totam aperiam aut. Amet voluptas harum sunt aliquam assumenda, officiis similique eaque!
         </p>
         <ul className="mt-6 space-y-6">
             {[1, 2, 3, 4].map((i) => (
                 <li key={i} className="flex items-start gap-4">
                     <Image src={`/service${i}.png`} alt="" width="50" height="50" className="flex-shrink-0" />
-                    <p className="w-auto 2xl:w-[900px] xl:w-[600px]">
+                    <p className="w-auto 2xl:w-[900px] xl:w-[600px] text-[14px] lg:text-[16px]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste numquam explicabo maiores officiis nostrum esse dignissimos, sequi enim minus alias repellat deleniti laboriosam rerum incidunt velit, mollitia sint? Dolorem, aliquam?
                     </p>
                 </li>
@@ -108,8 +108,8 @@ function Services1() {
     {/* Card Timer Section */}
     <div className="w-full flex-1 flex justify-center md:flex-row  items-center ">
         <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
-            <h2 className="font-bold text-3xl text-center">15+ Years of Excellence</h2>
-            <p className="text-center mt-2 mb-8">Lorem ipsum, dolor sit amet consectetu</p>
+            <div className="font-bold text-3xl text-center">15+ Years of Excellence</div>
+            <p className="text-center mt-2 mb-8 text-[14px] lg:text-[16px]">Lorem ipsum, dolor sit amet consectetu</p>
             <div className="space-y-16">
                 {[
                     { title: "Assignments Experts", count: assignments, suffix: "+" },

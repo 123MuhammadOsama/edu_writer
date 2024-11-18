@@ -48,11 +48,11 @@ const FAQ = () => {
             key={index}
             className="border rounded-lg shadow-md transition-all duration-200"
           >
-            <h2>
+            <p>
               <button
                 type="button"
                 onClick={() => toggleAccordion(index)}
-                className="flex items-center justify-between w-full p-4 text-gray-800 font-medium text-base md:text-lg"
+                className="flex items-start justify-start text-start w-full p-4 text-gray-800 font-medium text-base md:text-lg"
                 aria-expanded={open === index}
                 aria-controls={`accordion-body-${index}`}
               >
@@ -74,7 +74,7 @@ const FAQ = () => {
                   />
                 </svg>
               </button>
-            </h2>
+            </p>
             <div
               id={`accordion-body-${index}`}
               className={`${

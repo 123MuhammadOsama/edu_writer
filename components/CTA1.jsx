@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-// import TawktoButton from "./TawkToButton";
 import { ArrowRight } from "lucide-react";
 
 import { IoPaperPlaneOutline } from 'react-icons/io5';
@@ -11,10 +10,10 @@ function CTA1({ heading, span, heading2, paragraph }) {
       <div className="flex flex-row shadow-xl border border-gray-100 xl:w-[90%] lg:w-[100%] md:w-[80%] w-[95%] sm:h-[300px] 
         h-[400px] justify-start items-start md:px-10 my-12 md:mt-20 rounded-3xl mx-auto">
         <div className="flex flex-col 2xl:w-[700px] xl:w-[500px] lg:w-[400px] mx-[12px] xl:mx-[4px] xl:my-[20px] lg:my-[5px] my-[20px] ">
-          <h2 className="2xl:text-28px md:text-[24px] text-2xl font-bold md:py-2 sm:px-2 px-0 md:text-start text-center md:w-full">
+          <div className="2xl:text-28px md:text-[24px] text-2xl font-bold md:py-2 sm:px-2 px-0 md:text-start text-center md:w-full">
             {heading} <span className="text-secondaryRed">{span}</span> {heading2}
-          </h2>
-          <p className="py-1 sm:mx-2 mx-0 w-full 2xl:w-[600px] md:text-[15px] 2xl:text-[16.5px]">
+          </div>
+          <p className="py-1 sm:mx-2 mx-0 w-full 2xl:w-[600px]  text-[14px] lg:text-[16px]">
             {paragraph}
           </p>
           <div className="flex flex-row pt-4 md:mx-0 mx-1 gap-4 md:mr-2 md:justify-start md:items-center">
@@ -47,14 +46,7 @@ function CTA1({ heading, span, heading2, paragraph }) {
             alt="Image for text area"
             className="lg:block hidden "
           />
-          {/* Uncomment if needed for responsive design
-          <Image
-            src="/Hero_Image.png"
-            width="600"
-            height="800"
-            alt="Image for text area"
-            className="lg:hidden md:block hidden"
-          /> */}
+          
         </div>
       </div>
     </div>

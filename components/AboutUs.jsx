@@ -16,7 +16,7 @@ function AboutUs() {
     <h1 className="md:text-[40px] font-bold text-textColor text-3xl pb-2">
       From <span className="text-red-500">Overwhelmed</span> to <span className="text-primaryBlue">On-Top-Not, </span> a Dream, Just What We Do!
     </h1>
-    <p className="md:text-[16px] text-textColor text-[14px]">
+    <p className="lg:text-[16px] text-textColor text-[14px]">
       From messy drafts to polished perfection, we craft your path to non-stop excellence with a magical flair. Let’s turn your brilliant words into an A+ masterpiece, one assignment at a time. No more sleepless nights—just results that put you back on top!
     </p>
     <div className="mt-10">
@@ -61,19 +61,19 @@ function AboutUs() {
 
           </div>
           <div className="xl:max-w-xl 2xl:max-w-3xl md:max-w-3xl lg:max-w-lg ">
-            <h2 className="text-4xl font-bold "> <span className="text-primaryBlue ">
+            <h2 className="text-[26px] lg-text-[28px] font-bold "> <span className="text-primaryBlue ">
             Academic MVPs  </span> You Didn’t Know You Needed
             </h2>
           
-          <p className="md:text-[16px] text-textColor pb-2 text-[14px]">Have you ever found yourself buried under a mountain of homework, wondering if you’ll ever see the light of day again? You’re not alone! Whether you're stuck with a never-ending research paper or desperately asking folks “Write my essay for me?', every student knows the feeling of being overwhelmed. But what if we told you there’s a hidden squad of academic MVPs up and ready to swoop in and save the day? At our core, we’re not just about getting your work done; we’re about transforming your entire academic experience. With our talented team of writers in your corner, you’ll go from feeling the pressure to enjoying the ride. No more survival mode—it's time to rise and conquer your studies!
+          <p className="lg:text-[16px] text-textColor pb-2 text-[14px]">Have you ever found yourself buried under a mountain of homework, wondering if you’ll ever see the light of day again? You’re not alone! Whether you're stuck with a never-ending research paper or desperately asking folks “Write my essay for me?', every student knows the feeling of being overwhelmed. But what if we told you there’s a hidden squad of academic MVPs up and ready to swoop in and save the day? At our core, we’re not just about getting your work done; we’re about transforming your entire academic experience. With our talented team of writers in your corner, you’ll go from feeling the pressure to enjoying the ride. No more survival mode—it's time to rise and conquer your studies!
 
           </p>
-          <p className="md:text-[16px] text-textColor pb-2 text-[14px]">
+          <p className="lg:text-[16px] text-textColor pb-2 text-[14px]">
           Our crew of experts isn’t just a bunch of writers. They’re like the all-star athletes of the academic world. Each one brings their unique skills and knowledge to the table, ensuring you receive top-notch assistance tailored to your specific needs. Whether you're tackling a tricky dissertation, a challenging case study, or even seeking the best essay writing service, we’ve got your back. So, why stay on the sidelines? Let us help you score those A+ grades and make your academic journey a slam dunk! 
  
 
           </p>
-          <p className="md:text-[16px] text-textColor pb-2 text-[14px]">
+          <p className="lg:text-[16px] text-textColor pb-2 text-[14px]">
           Prepare to turn those headaches into high-fives with every assignment—bringing you closer to that well-deserved A+!
 
 
