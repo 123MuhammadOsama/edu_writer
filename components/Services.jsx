@@ -28,10 +28,10 @@ function Services() {
        >
         {/* Left Side Boxes (First 3 services) */}
       
-        <div className="flex flex-col mx-auto mt-6 2xl:ml-36 md:ml-0  ">
+        <div className="flex flex-col mx-auto mt-6 2xl:ml-20 md:ml-0">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           {servicesData.slice(0, 4).map((service, index) => (
-            <div key={index} className="lg:h-min md:h-[240px] h-min  lg:w-[460px] md:w-[350px] w-[340px] shadow-lg rounded-xl flex flex-row gap-4 mb-6 border border-gray-100 border-t-2 p-6">
+            <div key={index} className="lg:h-min md:h-[240px] h-min 2xl:w-[550px] xl:w-[400px] lg:w-[460px] md:w-[350px] w-[340px] shadow-lg rounded-xl flex flex-row gap-4 mb-6 border border-gray-100 border-t-2 p-6">
               <div className="flex flex-col w-[300px] ">
                 <span className="font-bold text-lg">{service.title}</span>
                 <p className="mt-1 lg:text-[16px] text-[13px]">{service.description}</p>
@@ -50,7 +50,7 @@ function Services() {
             width={300}
             height={600}
             alt="Girl Holding Books"
-            className="2xl:h-[1000px] 2xl:w-[500px] xl:h-[800px] xl:w-[450px]  "
+            className="2xl:h-[800px] 2xl:w-[500px] xl:h-[800px] xl:w-[450px]  "
           />
         </div>
 
@@ -58,7 +58,7 @@ function Services() {
         <div className="flex flex-col mx-auto md:mt-6 -mt-6 2xl:mr-36" >
             {/* eslint-disable-next-line react/no-unescaped-entities */}
           {servicesData.slice(4).map((service, index) => (
-            <div key={index} className="lg:h-min md:h-[240px] h-min lg:w-[460px] md:w-[350px] w-[340px] shadow-lg rounded-xl flex flex-row gap-4 mb-6 border border-gray-100 border-t-2 p-6">
+            <div key={index} className="lg:h-min md:h-[240px] h-min 2xl:w-[550px] xl:w-[400px] lg:w-[460px] md:w-[350px] w-[340px] shadow-lg rounded-xl flex flex-row gap-4 mb-6 border border-gray-100 border-t-2 p-6">
               <div className="flex flex-col w-[300px] ">
                 <span className="font-bold text-lg">{service.title}</span>
                 <p className="mt-1 lg:text-[16px] text-[13px]">{service.description}</p>
@@ -73,8 +73,9 @@ function Services() {
          <Image
             src="/Red_Girl.png"
             width={200}
-            height={500}
+            height={200}
             alt="Girl Holding Books"
+          
           />
         </div>
       </div>
