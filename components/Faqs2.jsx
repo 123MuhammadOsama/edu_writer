@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const FAQ = () => {
+const FAQ2 = () => {
   const [open, setOpen] = useState(null);
 
   const toggleAccordion = (id) => {
@@ -11,28 +11,31 @@ const FAQ = () => {
 
   const faqItems = [
     {
-      question: "Can I trust Edu Writers UK?",
-      answer: `Yes, you can absolutely trust us! While we don't share past assignments due to strict privacy policies, we have built a solid reputation with rave reviews from happy clients. Our online platform consistently earns top ratings for quality, originality, and timely delivery.`,
+      question: "What is dissertation help, and how can it benefit me?",
+      answer: `Dissertation help UK providers offer expert guidance, writing support, and resources to assist you in crafting a well-researched, structured dissertation. Using our service can be invaluable, saving time, reducing stress, and ensuring academic standards are met.
+`,
     },
     {
-      question: "Can you assist with assignments from different subjects or specialisations?",
-      answer: `Absolutely! Whether you need help with science, literature, business, or any other subject, our experts cover a wide range of topics, ensuring every assignment is thoroughly researched and perfectly crafted.`,
+      question: "Is my information kept confidential when using dissertation help?",
+      answer: `Absolutely! We prioritize your privacy and follow strict policies. Backed by SSL certification and ironclad NDA, your personal data and project details are securely managed, ensuring your work remains completely private and protected throughout the process.`,
     },
     {
-      question: "Which writing formats do you use (APA, MLA, Chicago, etc.)?",
-      answer: `We are experienced in all major writing formats, including APA, MLA, Chicago, Harvard, and much more. When you ask us to “write my essay for me”, rest assured that your paper will follow the correct format according to your specific academic guidelines.`,
+      question: "What’s the cost of dissertation help online services?",
+      answer: `Our services are priced flexibly and tailored to fit different needs and budgets, with costs based on the project’s complexity, length, and deadline. Moreover, you can access our various discounts and sweet deals too. For more details, contact customer support for a free quote.`,
     },
     {
-      question: "How do you select your writers?",
-      answer: `Our writers are carefully chosen based on their qualifications, expertise, and experience in academic writing. They are specialists in their respective fields, ensuring that your work is handled by someone who knows the subject inside out.`,
+      question: "What if I only need help with one section of my dissertation",
+      answer: `No problem! We offer targeted assistance for individual sections, including literature reviews, methodology, conclusions, and much more. Whether you need specific help or comprehensive support, we’re here to ensure each part meets your demands.
+`,
     },
     {
-      question: "What payment options do you offer, and is a deposit required?",
-      answer: `We accept various payment methods for your convenience. To get started, you can secure your order with a 50% deposit. This half-payment system ensures accessibility and lets us begin working on your project immediately.`,
+      question: "Can I use a dissertation help service for proofreading only?",
+      answer: `Certainly! We offer a standalone proofreading service to provide a final polish; catching errors, improving flow, and refining your dissertation for submission. It’s ideal if you want expert editing without full writing assistance.`,
     },
     {
-      question: "Do you cater to various academic levels like high school, college, or graduate studies?",
-      answer: `Yes, we provide assistance across all academic levels—be it high school essays, college papers, or dissertation writing help for advanced studies— we're equipped to handle any challenge.`,
+      question: "Are dissertation help services available internationally?",
+      answer: `Yes! Our online platform is designed to assist students worldwide, adapting to various university standards. No matter where you’re located, our team is equipped to provide top-notch help writing dissertations so you can better achieve your goals.
+`,
     },
   ];
 
@@ -102,4 +105,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQ2;

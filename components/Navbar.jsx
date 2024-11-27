@@ -2,51 +2,47 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MailIcon, PhoneIcon } from "lucide-react";
-
-
+import { MailIcon, PhoneIcon, ChevronDownIcon } from "lucide-react";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [LiActive, setLiActive] = useState("");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  
-
-
-  //RESPONISVE TOGGLE BEHAVIOUR  //
-  useEffect(()=>{
-  const mediaqueries = () =>{
-    if (window.outerWidth >= 1024) {
-      setIsSidebarOpen(false);
-    } else if (window.outerWidth <= 1023) {
-      setLiActive("");
-    }
-  }
-  window.addEventListener("resize", mediaqueries);
+  useEffect(() => {
+    const mediaqueries = () => {
+      if (window.outerWidth >= 1024) {
+        setIsSidebarOpen(false);
+      }
+    };
+    window.addEventListener("resize", mediaqueries);
     return () => {
       window.removeEventListener("resize", mediaqueries);
     };
   }, []);
 
-  
-
+  const services = [
+    { name: "Service 1", link: "/services/assignment-writing-services" },
+    { name: "Service 2", link: "/services/dissertation-writing-help" },
+    { name: "Service 3", link: "/services/write-my-essay" },
+    { name: "Service 4", link: "/services/thesis-writing-help" },
+    { name: "Service 5", link: "/services/coursework-writing-help" },
+    { name: "Service 6", link: "/services/research-paper-help" },
+    { name: "Service 7", link: "/services/case-study-help" },
+    { name: "Service 8", link: "/services/editing-and-proofreading-services" },
+  ];
 
   return (
-    <section className="w-full fixed h-min z-50">
-
-
-      {/*  */}
-      <div className="flex justify-between items-center border-b bg-white z-50 ">
-
+    <section className="w-full fixed h-min z-50 px-10">
+      <div className="flex justify-between items-center border-b bg-white z-50">
         {/* Logo Section */}
         <div className="flex-shrink-0">
-          <Link href='/'>
+          <Link href="/">
             <Image
               src="/Logo.png"
               alt="logo"
               width={240}
               height={160}
-              className="object-contain "
+              className="object-contain"
             />
           </Link>
         </div>
@@ -66,101 +62,94 @@ const Navbar = () => {
                 stroke="currentColor"
                 strokeWidth="2"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M1 1h15M1 7h15M1 13h15" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
               </svg>
             </button>
           )}
         </div>
 
         {/* Links Section (Shown on lg and above) */}
-        <div className=" hidden lg:flex space-x-4 md:space-x-2 lg:space-x-4 lg:text-lg xl:text-2xl ">
-          <Link href="/about" className="text-xs md:text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2" >About Us</Link>
-          <Link href="/services" className="text-xs md:text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2" >Services</Link>
-          <Link href="/contactus" className="text-xs md:text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2" >Contact Us</Link>
+        <div className="hidden lg:flex items-center space-x-2 lg:text-lg xl:text-xl">
+          <Link
+            href="/about"
+            className="text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2"
+          >
+            About Us
+          </Link>
+
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2 flex items-center space-x-1"
+            >
+              <span>Services</span>
+              <ChevronDownIcon height={16} width={16} />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 w-48 bg-white shadow-lg border rounded-md mt-2 z-50">
+                <ul>
+                  {services.map((service, index) => (
+                    <li key={index} className="border-b last:border-0">
+                      <Link
+                        href={service.link}
+                        className="block px-3 py-1 text-sm hover:bg-gray-100 hover:text-[#fa2a5e]"
+                        onClick={() => setIsDropdownOpen(false)} // Close dropdown on link click
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <Link
+            href="/contactus"
+            className="text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2"
+          >
+            Contact Us
+          </Link>
+
+          {/* Email and Phone */}
+          <div className="flex items-center space-x-4 pl-4">
+            <a href="mailto:info@example.com" className="flex items-center space-x-2">
+              <MailIcon height={20} width={20} />
+              <span className="text-sm xl:text-base">info@example.com</span>
+            </a>
+            <a href="tel:+1234567890" className="flex items-center space-x-2">
+              <PhoneIcon height={20} width={20} />
+              <span className="text-sm xl:text-base">+1(123)456-7890</span>
+            </a>
+          </div>
         </div>
 
-        {/* Contact Section (Shown on sm and above) */}
-        {!isSidebarOpen && (
-
-          <div className="flex flex-row justify-center w-1/2">
-            <div className="hidden lg:flex relative flex-col group overflow-hidden mt-4  lg:text-lg">
-              <div className="flex items-center space-x-2 z-10 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">
-                <a href="mailto:info@eduwriter.com">
-                  <span className="flex items-center  space-x-2 z-10 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">
-                    <MailIcon height={20} width={20} />
-                    <p className="text-black  ">info@eduwriter.com</p>
-                  </span>
-                </a>
-              </div>
-
-              <div className="flex items-center space-x-2 absolute top-0 transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-blue-700">
-                <a href="mailto:info@eduwriter.com">
-                  <span className="flex items-center space-x-2 absolute top-0 transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-blue-700">
-                    <MailIcon height={20} width={20} />
-                    <p className="">info@eduwriter.com</p>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div className="hidden lg:flex relative flex-col group overflow-hidden mt-4 ">
-              <div className="flex items-center space-x-2 z-10 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">
-                <a href="tel:+1 206 746-7149">
-                  <span className="px-2 flex items-center space-x-2 z-10 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">
-                    <Image
-                      src="/whatsapp-black.png"
-                      alt=""
-                      width="25"
-                      height="25"
-                      className="object-contain mx-2"
-
-                    />
-                    +1(206)746-7149
-                  </span>
-                </a>
-              </div>
-
-              <div className="flex items-center space-x-2  xl:-mt-8 transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-green-700 pt-2">
-                <a href="tel:+1 246 246 ">
-                  <span className="flex items-center px-2 space-x-2 transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-green-700 w-[200px]">
-                    <Image
-                      src="/greenWhatsapp.png"
-                      alt=""
-                      width="22"
-                      height="22"
-                      className="object-contain mx-2"
-                    />
-                    +1(206)746-7149
-                  </span>
-
-
-
-                </a>
-
-              </div>
-
-
-            </div>
-            <Link href="/ordernow">
-              <button className=" border-2 border-black text-black lg:px-4 md:px-2 px-2 mx-1 py-4 hover:bg-secondaryRed hover:text-white md:h-10 md:w-36 h-6 flex justify-center items-center rounded-lg mt-1 md:mt-4 lg:text-lg md:text-sm text-xs ">
-                Order Now
-
-              </button>
-
-            </Link>
-
-          </div>
-        )}
+        {/* Order Now Button */}
+        <Link href="/ordernow">
+          <button className="border-2 border-black text-black px-4 mx-2 py-2 hover:bg-secondaryRed hover:text-white rounded-lg text-sm">
+            Order Now
+          </button>
+        </Link>
       </div>
 
       {/* Sidebar */}
-      <div className={`fixed top-0 left-0 h-full w-80  bg-white z-50 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div
+        className={`fixed top-0 left-0 h-full w-80 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
         <div className="flex flex-col p-6 space-y-8">
-
           {/* Close Button inside Sidebar */}
           <div className="self-end">
-            <button onClick={() => setIsSidebarOpen(false)} className="focus:outline-none">
-              {/* Close Icon */}
+            <button
+              onClick={() => setIsSidebarOpen(false)}
+              className="focus:outline-none"
+            >
               <svg
                 className="h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,35 +167,45 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href='/'>
-              <Image
-                src="/Logo.png"
-                alt="logo"
-                width={280}
-                height={180}
-                className="object-contain"
-              />
-            </Link>
-          </div>
-
           {/* Navigation Links */}
-          <Link href="/about" className="md:text-md font-medium hover:text-secondaryRed" onClick={() => setIsSidebarOpen(false)}>About Us</Link>
-          <Link href="/services" className="md:text-md font-medium hover:text-secondaryRed" onClick={() => setIsSidebarOpen(false)}>Services</Link>
-          <Link href="/contactus" className="md:text-md font-medium hover:text-secondaryRed" onClick={() => setIsSidebarOpen(false)}>Contact Us</Link>
+          <Link
+            href="/about"
+            className="md:text-md font-medium hover:text-secondaryRed"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
+            href="/services"
+            className="md:text-md font-medium hover:text-secondaryRed"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            href="/contactus"
+            className="md:text-md font-medium hover:text-secondaryRed"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            Contact Us
+          </Link>
 
-          {/* Contact Section in the Sidebar */}
+          {/* Email and Phone in Sidebar */}
           <div className="space-y-4">
-            {/* Phone */}
-            <span className="flex flex-row h-10 gap-x-2 md:gap-x-1 text-sm text-black font-bold hover:text-green-600">
-              <PhoneIcon height={20} width={20} />
-              +1(206)746-7149
-            </span>
-            <span className="flex flex-row h-10 gap-x-2  w-full text-sm text-black font-bold  hover:text-green-600">
+            <a
+              href="mailto:info@example.com"
+              className="flex items-center space-x-2 text-sm font-medium hover:text-blue-600"
+            >
               <MailIcon height={20} width={20} />
-              info@proghostwritingservices.com
-            </span>
+              <span>info@example.com</span>
+            </a>
+            <a
+              href="tel:+1234567890"
+              className="flex items-center space-x-2 text-sm font-medium hover:text-green-600"
+            >
+              <PhoneIcon height={20} width={20} />
+              <span>+1(123)456-7890</span>
+            </a>
           </div>
         </div>
       </div>

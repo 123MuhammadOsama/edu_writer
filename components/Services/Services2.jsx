@@ -6,10 +6,11 @@ import Writers from "@/components/Writers";
 import Faqs from "@/components/Faqs3";
 import Academic from "./Academic4";
 import Experince from "./Experince4";
-import Academic1 from "./Academic1";
-import Experince1 from "./Experince1";
+import Academic2 from "./Academic2";
+import Experince2 from "./Experince2";
+import FAQ2 from "../Faqs2";
 
-function Services1() {
+function Services2() {
     const [assignments, setAssignments] = useState(0);
     const [projects, setProjects] = useState(0);
     const [customers, setCustomers] = useState(0);
@@ -65,20 +66,20 @@ function Services1() {
 
     const content = [
         {
-            heading: "Fine-Tune Without Limits:",
-            text: "Need adjustments? We've got you covered! We provide unlimited revisions to ensure every detail aligns with your vision. Your satisfaction is our priority, and we won't stop until you're delighted with the outcome."
+            heading: "Limitless Revisions:",
+            text: "Perfection takes time, and we’re here for it! Enjoy unlimited revisions at no extra cost until you’re completely satisfied with your work. Because when it comes to your success, we’re all in!"
         },
         {
-            heading: "First-Class Quality:",
-            text: "A+ Quality is our standard! From thorough research to flawless execution, our work speaks for itself. Submit with confidence, knowing excellence is guaranteed."
+            heading: "Top Quality, Every time:",
+            text: "The highest standards, guaranteed. We double-check, triple-check, and then deliver the best of the best! You’ll get only top-quality work ready to impress—no ifs, and’s, or but’s about it."
         },
         {
-            heading: "Uncompromised Authenticity:",
-            text: "Completely original, zero hassle! Every assignment is crafted uniquely for you—no templates, no shortcuts, just authentic content tailored to impress."
+            heading: "100% Original, Always:",
+            text: "Nothing but the real deal here! Every dissertation is crafted from scratch, guaranteeing work that’s fresh, unique, and your’s—because originality is in our DNA."
         },
         {
-            heading: "24/7 at Your Service:",
-            text: "Deadline closing in? Our non-stop support means you’re never alone in the assignment game. Reach out whenever—day or night—and we’ll be ready to help you succeed!"
+            heading: "24/Support On-Demand:",
+            text: "We’re here on your schedule! Our team’s available around the clock, so whenever that tricky question hits, you know exactly where to go. Late-night homework crisis? Consider them handled."
         }
     ];
 
@@ -88,11 +89,11 @@ function Services1() {
             <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
                 <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
                     <h1 className="text-[40px] md:text-5xl font-bold text-textColor leading-tight">
-                        Expert <span className="text-red-500">Assignment Writing Service</span> That 
-                        <span className="text-primaryBlue"> Impresses!</span> 
+                    Best    <span className="text-red-500">Dissertation Help</span> That Gets You Closer to 
+                        <span className="text-primaryBlue"> Graduation!</span> 
                     </h1>
                     <p className="mt-4 text-base text-[14px] lg:text-[16px] text-textColor">
-                        Dream of acing that paper without the all-nighters? From research-heavy essays to quick homework help, professional assignment writers are here around the clock to deliver assignments that make the grade and let you keep your life!
+                    From brainstorming to the final edits, get expert dissertation help services that turn frustration into focus, provide clarity over chaos, and give you the edge you need to win that hard-earned degree—without the usual stress and hassle!
                     </p>
                     <div className="mt-6 mx-auto lg:mx-0 w-3/4 lg:w-full">
                         <Image src="/Reviews.png" alt="Reviews" width={600} height={100} className="w-auto" />
@@ -108,10 +109,10 @@ function Services1() {
                 {/* Content Section */}
                 <div className="flex-1 2xl:pt-14">
                     <h2 className="font-bold text-[26px] lg:text-[28px]">
-                        The Edge You Need: Reliable, Quality-Driven UK Assignment Writing Service
+                    Want an Academic Boost? Let Us Work for You!
                     </h2>
                     <p className="mt-4 text-[14px] lg:text-[16px] w-auto 2xl:w-[1000px] xl:w-[600px]">
-                        Effortlessly boost your grades with England’s finest pros—quick, dependable, and prepared for any challenge. So, why wait? Swap stress for success and watch your academic goals come to life!
+                    Get ready to experience exceptional dissertation writing help with a personal touch! Our UK-based experts are here to deliver the quality you need, right on time, helping you turn deadlines into A+ moments without the all-nighters:
                     </p>
                     {/* Additional Content */}
                     <ul className="mt-6 space-y-6">
@@ -162,26 +163,26 @@ function Services1() {
             {/* Other Sections */}
             <div className="mt-16">
                 <CTA1
-                    heading="Get  That Fits Your Life and "
-                    span="Professional Support"
-                    heading2="Lifts Your Grades!"
-                    paragraph="From Last-Minute Rescues to Long-Term Wins—We're Your Ultimate Assignment Ally, Crafting Award-worthy Masterpieces with Zero Stress and 100% Precision."
+                    heading="Need Urgent "
+                    span="Help with Dissertation?"
+                    heading2="Go from Overwhelmed to Outstanding with Just a Click!"
+                    paragraph="Conquer the chaos of dissertation writing with expert support that breaks it down, lifts you up, and gets you closer to the finish line one page at a time!"
                 />
             </div>
             <div>
-                <Academic1 />
+                <Academic2 />
             </div>
             <div>
-                <Experince1 />
+                <Experince2 />
             </div>
             <div className="mt-16">
                 <Writers />
             </div>
             <div className="mt-16">
-                <Faqs />
+                <FAQ2 />
             </div>
         </div>
     );
 }
 
-export default Services1;
+export default Services2;

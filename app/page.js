@@ -7,7 +7,7 @@ import CTA2 from '@/components/CTA2';
 import Scrollsection from '@/components/Scrollsection';
 import Testimonials from '@/components/Testimonials';
 import CTA3 from '@/components/CTA3';
-import FAQ from '@/components/Faqs';
+import FAQ from '@/components/Faqs3';
 import Footer from '@/components/Footer';
 import Counter from '@/components/Counter';
 
