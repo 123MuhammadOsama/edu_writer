@@ -5,6 +5,7 @@ import React from 'react'
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -21,10 +22,10 @@ const Footer = () => {
             />
         </div>
         <div className='pl-0 lg:pl-10'>
-            <p className='text-[14px] lg:text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur eveniet nemo deserunt delectus. Quibusdam, aliquam neque enim et odio ad autem iure beatae mollitia dolor quidem placeat. Architecto, vero?</p>
+            <p className='text-[14px] lg:text-[16px]'>Edu Writers UK delivers expert, original assignments tailored to your needs, helping you achieve your goals—quick, reliable, and stress-free.</p>
         </div>
         <div className='flex gap-2 pl-0 lg:pl-10'>
-            <FaLocationDot  className='text-2xl'/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ducimus.</span>
+            <FaLocationDot  className='text-2xl'/> <span>56 Dean St, London W1D 6AE, United Kingdom</span>
             
         </div>
 
@@ -33,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <FaPhoneAlt className='text-2xl' /> <span>+44 000000</span>
+        <FaPhoneAlt className='text-2xl' /> <span>+44 7447 887335</span>
 
         </div>
       </div>
@@ -52,10 +53,18 @@ const Footer = () => {
         <div className='text-center'>
         <span className="font-bold text-2xl text-white">Useful Links</span>
         <ul className="underline">
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
+        <li className="hover:text-tertiaryYellow">
+    <Link href="/">Home</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/about">About Us</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/ordernow">Order now</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/">Blog</Link>
+  </li>
         </ul>
 
         <div className='space-y-2 pl-20 md:pl-8 lg:pl-4 pt-6'>
@@ -108,16 +117,35 @@ const Footer = () => {
 
         <div className='text-center'>
         <span className="font-bold text-2xl text-white">Services</span>
-        <ul className="underline">
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-            <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
-        </ul>
+        
+
+<ul className='underline'>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/assignment-writing-services">Assignment Writing Services</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/dissertation-writing-help">Dissertation Writing Help</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/write-my-essay">Write My Essay</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/thesis-writing-help">Thesis Writing Help</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/coursework-writing-help">Coursework Writing Help</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/research-paper-help">Research Paper Help</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/case-study-help">Case Study Help</Link>
+  </li>
+  <li className="hover:text-tertiaryYellow">
+    <Link href="/editing-and-proofreading-services">Editing and Proofreading Services</Link>
+  </li>
+</ul>
+
         </div>
       </div>
     </div>

@@ -3,9 +3,6 @@ import Image from "next/image";
 import { useState, useRef, useEffect, useMemo } from "react";
 import CTA1 from "@/components/CTA1";
 import Writers from "@/components/Writers";
-import Faqs from "@/components/Faqs3";
-import Academic from "./Academic4";
-import Experince from "./Experince4";
 import Academic1 from "./Academic1";
 import Experince1 from "./Experince1";
 import FAQ1 from "../Faqs1";
@@ -36,14 +33,16 @@ function Services1() {
             projects: calculateIncrement(0, targetValues.projects, duration),
             customers: calculateIncrement(0, targetValues.customers, duration),
         };
-
+    
+        const currentIntervals = { ...intervals.current }; // Copy ref value
+    
         const startCounter = (setCounter, intervalKey, targetValue, increment) => {
-            clearInterval(intervals.current[intervalKey]);
-            intervals.current[intervalKey] = setInterval(() => {
+            clearInterval(currentIntervals[intervalKey]); // Use the local copy here
+            currentIntervals[intervalKey] = setInterval(() => {
                 setCounter((prevValue) => {
                     const nextValue = prevValue + increment;
                     if (nextValue >= targetValue) {
-                        clearInterval(intervals.current[intervalKey]);
+                        clearInterval(currentIntervals[intervalKey]);
                         return targetValue;
                     } else {
                         return nextValue;
@@ -51,70 +50,72 @@ function Services1() {
                 });
             }, 30);
         };
-
+    
         startCounter(setAssignments, 'assignments', targetValues.assignments, increments.assignments);
         startCounter(setProjects, 'projects', targetValues.projects, increments.projects);
         startCounter(setCustomers, 'customers', targetValues.customers, increments.customers);
-
-        // Copy intervals to a local variable for cleanup
-        const currentIntervals = { ...intervals.current };
-
+    
         return () => {
-            Object.values(currentIntervals).forEach(clearInterval);
+            Object.values(currentIntervals).forEach(clearInterval); // Cleanup with the local copy
         };
     }, [targetValues, duration]);
+    
 
     const content = [
         {
             heading: "Fine-Tune Without Limits:",
-            text: "Need adjustments? We've got you covered! We provide unlimited revisions to ensure every detail aligns with your vision. Your satisfaction is our priority, and we won't stop until you're delighted with the outcome."
+            text: "Need adjustments? We've got you covered! We provide unlimited revisions to ensure every detail aligns with your vision. Your satisfaction is our priority, and we won't stop until you're delighted with the outcome.",
         },
         {
             heading: "First-Class Quality:",
-            text: "A+ Quality is our standard! From thorough research to flawless execution, our work speaks for itself. Submit with confidence, knowing excellence is guaranteed."
+            text: "A+ Quality is our standard! From thorough research to flawless execution, our work speaks for itself. Submit with confidence, knowing excellence is guaranteed.",
         },
         {
             heading: "Uncompromised Authenticity:",
-            text: "Completely original, zero hassle! Every assignment is crafted uniquely for you—no templates, no shortcuts, just authentic content tailored to impress."
+            text: "Completely original, zero hassle! Every assignment is crafted uniquely for you—no templates, no shortcuts, just authentic content tailored to impress.",
         },
         {
             heading: "24/7 at Your Service:",
-            text: "Deadline closing in? Our non-stop support means you’re never alone in the assignment game. Reach out whenever—day or night—and we’ll be ready to help you succeed!"
-        }
+            text: "Deadline closing in? Our non-stop support means you’re never alone in the assignment game. Reach out whenever—day or night—and we’ll be ready to help you succeed!",
+        },
     ];
 
     return (
-        <div className="px-4 lg:px-8 xl:px-16 2xl:px-32 mt-10 w-full overflow-hidden">
+        <div className="px-4 md:px-8 lg:px-16 xl:px-24 mt-10 w-full overflow-hidden">
             {/* First Section */}
-            <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
-                <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
-                    <h1 className="text-[40px] md:text-5xl font-bold text-textColor leading-tight">
+            <div className="flex flex-col lg:flex-row items-center mt-12 lg:mt-24">
+                <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+                    <h1 className="text-3xl md:text-4xl font-bold text-textColor leading-tight">
                         Expert <span className="text-red-500">Assignment Writing Service</span> That 
-                        <span className="text-primaryBlue"> Impresses!</span> 
+                        <span className="text-primaryBlue"> Impresses!</span>
                     </h1>
-                    <p className="mt-4 text-base text-[14px] lg:text-[16px] text-textColor">
+                    <p className="mt-4 text-sm md:text-base text-textColor">
                         Dream of acing that paper without the all-nighters? From research-heavy essays to quick homework help, professional assignment writers are here around the clock to deliver assignments that make the grade and let you keep your life!
                     </p>
-                    <div className="mt-6 mx-auto lg:mx-0 w-3/4 lg:w-full">
-                        <Image src="/Reviews.png" alt="Reviews" width={600} height={100} className="w-auto" />
+                    <div className="mt-6 lg:mt-10 mx-auto lg:mx-0 w-full max-w-md">
+                        <Image 
+                            src="/Reviews.png" 
+                            alt="Reviews" 
+                            width={600} 
+                            height={150} 
+                            className="w-full h-auto" 
+                        />
                     </div>
                 </div>
-                <div className="flex justify-center w-full lg:w-auto mx-auto">
-                    <Image src="/service5.png" alt="Service" width={600} height={600} className="w-full max-w-md lg:max-w-lg" />
+                <div className="w-full lg:w-1/2 flex justify-center">
+                    <Image src="/service5.png" alt="Service" width={600} height={600} className="w-full max-w-sm lg:max-w-lg" />
                 </div>
             </div>
 
-            {/* Section Container */}
-            <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-28 mx-20">
-                {/* Content Section */}
-                <div className="flex-1 2xl:pt-14">
-                    <h2 className="font-bold text-[26px] lg:text-[28px]">
+            {/* Features Section */}
+            <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-16">
+                <div className="flex-1">
+                    <h2 className="font-bold text-xl lg:text-2xl">
                         The Edge You Need: Reliable, Quality-Driven UK Assignment Writing Service
                     </h2>
-                    <p className="mt-4 text-[14px] lg:text-[16px] w-auto 2xl:w-[1000px] xl:w-[600px]">
+                    <p className="mt-4 text-sm md:text-base text-textColor">
                         Effortlessly boost your grades with England’s finest pros—quick, dependable, and prepared for any challenge. So, why wait? Swap stress for success and watch your academic goals come to life!
                     </p>
-                    {/* Additional Content */}
                     <ul className="mt-6 space-y-6">
                         {content.map((item, i) => (
                             <li key={i} className="flex items-start gap-4">
@@ -125,34 +126,35 @@ function Services1() {
                                     height={50} 
                                     className="flex-shrink-0" 
                                 />
-                                <div className="w-auto 2xl:w-[900px] xl:w-[600px]">
-                                    <h3 className="text-[16px] font-bold lg:text-[18px]">{item.heading}</h3>
-                                    <p className="text-[14px] lg:text-[16px]">{item.text}</p>
+                                <div>
+                                    <h3 className="text-base md:text-lg font-bold">{item.heading}</h3>
+                                    <p className="text-sm md:text-base">{item.text}</p>
                                 </div>
                             </li>
                         ))}
                     </ul>
                 </div>
 
-                {/* Card Timer Section */}
-                <div className="w-full flex-1 flex justify-center md:flex-row items-center">
-                    <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
-                        <div className="font-bold text-3xl text-center">10+ Years of Scholarly Success!</div>
-                        <p className="text-center mt-2 mb-8 text-[14px] lg:text-[16px]">
+                {/* Stats Section */}
+                <div className="w-full lg:w-1/2 flex flex-col items-center">
+                    <div className="shadow-lg border rounded-xl p-6 sm:p-8 flex flex-col items-center w-full max-w-md">
+                        <h3 className="text-2xl md:text-3xl font-bold text-center">
+                            10+ Years of Scholarly Success!
+                        </h3>
+                        <p className="mt-2 mb-6 text-sm md:text-base text-center">
                             Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
                         </p>
-                        <div className="space-y-16">
+                        <div className="space-y-6">
                             {[
                                 { title: "Expert Assignment Specialists", count: assignments, suffix: "+" },
                                 { title: "Successful Projects Completed", count: projects, suffix: "+" },
                                 { title: "Student Satisfaction Rate", count: customers, suffix: "%" },
                             ].map(({ title, count, suffix }, idx) => (
-                                <div key={idx} className="flex flex-col items-center">
-                                    <span className="text-6xl text-primaryBlue font-bold">
-                                        {Math.floor(count)}
-                                        {suffix}
+                                <div key={idx} className="text-center">
+                                    <span className="text-xl md:text-2xl lg:text-3xl text-primaryBlue font-bold">
+                                        {Math.floor(count)}{suffix}
                                     </span>
-                                    <p className="text-center">{title}</p>
+                                    <p className="text-sm md:text-base">{title}</p>
                                 </div>
                             ))}
                         </div>
@@ -169,10 +171,10 @@ function Services1() {
                     paragraph="From Last-Minute Rescues to Long-Term Wins—We're Your Ultimate Assignment Ally, Crafting Award-worthy Masterpieces with Zero Stress and 100% Precision."
                 />
             </div>
-            <div>
+            <div className="mt-16">
                 <Academic1 />
             </div>
-            <div>
+            <div className="mt-16">
                 <Experince1 />
             </div>
             <div className="mt-16">

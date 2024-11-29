@@ -56,7 +56,6 @@ function Services2() {
         startCounter(setProjects, 'projects', targetValues.projects, increments.projects);
         startCounter(setCustomers, 'customers', targetValues.customers, increments.customers);
 
-        // Copy intervals to a local variable for cleanup
         const currentIntervals = { ...intervals.current };
 
         return () => {
@@ -89,11 +88,11 @@ function Services2() {
             <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
                 <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
                     <h1 className="text-[40px] md:text-5xl font-bold text-textColor leading-tight">
-                    Best    <span className="text-red-500">Dissertation Help</span> That Gets You Closer to 
+                        Best <span className="text-red-500">Dissertation Help</span> That Gets You Closer to 
                         <span className="text-primaryBlue"> Graduation!</span> 
                     </h1>
                     <p className="mt-4 text-base text-[14px] lg:text-[16px] text-textColor">
-                    From brainstorming to the final edits, get expert dissertation help services that turn frustration into focus, provide clarity over chaos, and give you the edge you need to win that hard-earned degree—without the usual stress and hassle!
+                        From brainstorming to the final edits, get expert dissertation help services that turn frustration into focus, provide clarity over chaos, and give you the edge you need to win that hard-earned degree—without the usual stress and hassle!
                     </p>
                     <div className="mt-6 mx-auto lg:mx-0 w-3/4 lg:w-full">
                         <Image src="/Reviews.png" alt="Reviews" width={600} height={100} className="w-auto" />
@@ -109,12 +108,11 @@ function Services2() {
                 {/* Content Section */}
                 <div className="flex-1 2xl:pt-14">
                     <h2 className="font-bold text-[26px] lg:text-[28px]">
-                    Want an Academic Boost? Let Us Work for You!
+                        Want an Academic Boost? Let Us Work for You!
                     </h2>
                     <p className="mt-4 text-[14px] lg:text-[16px] w-auto 2xl:w-[1000px] xl:w-[600px]">
-                    Get ready to experience exceptional dissertation writing help with a personal touch! Our UK-based experts are here to deliver the quality you need, right on time, helping you turn deadlines into A+ moments without the all-nighters:
+                        Get ready to experience exceptional dissertation writing help with a personal touch! Our UK-based experts are here to deliver the quality you need, right on time, helping you turn deadlines into A+ moments without the all-nighters:
                     </p>
-                    {/* Additional Content */}
                     <ul className="mt-6 space-y-6">
                         {content.map((item, i) => (
                             <li key={i} className="flex items-start gap-4">

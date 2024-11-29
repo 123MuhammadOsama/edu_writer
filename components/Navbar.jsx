@@ -7,11 +7,13 @@ import { MailIcon, PhoneIcon, ChevronDownIcon } from "lucide-react";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSidebarDropdownOpen, setIsSidebarDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.outerWidth >= 1024) {
         setIsSidebarOpen(false);
+        setIsSidebarDropdownOpen(false);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -21,14 +23,14 @@ const Navbar = () => {
   }, []);
 
   const services = [
-    { name: "Assignment Writing Services", link: "/services/assignment-writing-services" },
-    { name: "Dissertation Writing Help", link: "/services/dissertation-writing-help" },
-    { name: "Write My Essay", link: "/services/write-my-essay" },
-    { name: "Thesis Writing Help", link: "/services/thesis-writing-help" },
-    { name: "Coursework Writing Help", link: "/services/coursework-writing-help" },
-    { name: "Research Paper Help", link: "/services/research-paper-help" },
-    { name: "Case Study Help", link: "/services/case-study-help" },
-    { name: "Editing and Proofreading Services", link: "/services/editing-and-proofreading-services" },
+    { name: "Assignment Writing Services", link: "/assignment-writing-services" },
+    { name: "Dissertation Writing Help", link: "/dissertation-writing-help" },
+    { name: "Write My Essay", link: "/write-my-essay" },
+    { name: "Thesis Writing Help", link: "/thesis-writing-help" },
+    { name: "Coursework Writing Help", link: "/coursework-writing-help" },
+    { name: "Research Paper Help", link: "/research-paper-help" },
+    { name: "Case Study Help", link: "/case-study-help" },
+    { name: "Editing and Proofreading Services", link: "/editing-and-proofreading-services" },
   ];
 
   return (
@@ -49,27 +51,25 @@ const Navbar = () => {
 
         {/* Hamburger Menu for Small Screens */}
         <div className="lg:hidden">
-          {!isSidebarOpen && (
-            <button
-              onClick={() => setIsSidebarOpen(true)}
-              className="focus:outline-none text-gray-600"
+          <button
+            onClick={() => setIsSidebarOpen((prev) => !prev)}
+            className="focus:outline-none text-gray-600"
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
             >
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          )}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
 
         {/* Links Section (Visible on Large Screens) */}
@@ -168,15 +168,34 @@ const Navbar = () => {
               <Link href="/about" className="block hover:text-secondaryRed">
                 About Us
               </Link>
-              {services.map((service, index) => (
-                <Link
-                  key={index}
-                  href={service.link}
-                  className="block hover:text-secondaryRed"
-                >
-                  {service.name}
-                </Link>
-              ))}
+              
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="hover:text-[#fa2a5e] flex items-center space-x-1"
+            >
+              <span>Services</span>
+              <ChevronDownIcon className="h-4 w-4" />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 w-56 bg-white shadow-md border rounded-md mt-2">
+                <ul className="divide-y">
+                  {services.map((service, index) => (
+                    <li key={index}>
+                      <Link
+                        href={service.link}
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#fa2a5e]"
+                        onClick={() => setIsDropdownOpen(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
               <Link href="/contactus" className="block hover:text-secondaryRed">
                 Contact Us
               </Link>
