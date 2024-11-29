@@ -81,7 +81,7 @@ function Services1() {
     ];
 
     return (
-        <div className="px-4 md:px-8 lg:px-16 xl:px-24 mt-10 w-full overflow-hidden">
+        <div className="px-4 md:px-8 lg:px-16 xl:px-24 mt-20 w-full overflow-hidden">
             {/* First Section */}
             <div className="flex flex-col lg:flex-row items-center mt-12 lg:mt-24">
                 <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
@@ -92,15 +92,14 @@ function Services1() {
                     <p className="mt-4 text-sm md:text-base text-textColor">
                         Dream of acing that paper without the all-nighters? From research-heavy essays to quick homework help, professional assignment writers are here around the clock to deliver assignments that make the grade and let you keep your life!
                     </p>
-                    <div className="mt-6 lg:mt-10 mx-auto lg:mx-0 w-full max-w-md">
-                        <Image 
-                            src="/Reviews.png" 
-                            alt="Reviews" 
-                            width={600} 
-                            height={150} 
-                            className="w-full h-auto" 
-                        />
-                    </div>
+                    <div className="mt-10">
+            <Image
+              src="/Reviews.png"
+              width="600"
+              height="400"
+              alt="Trust Pilot"
+            />
+          </div>
                 </div>
                 <div className="w-full lg:w-1/2 flex justify-center">
                     <Image src="/service5.png" alt="Service" width={600} height={600} className="w-full max-w-sm lg:max-w-lg" />
