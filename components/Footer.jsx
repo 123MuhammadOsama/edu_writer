@@ -58,7 +58,7 @@ const Footer = () => {
             <li className="hover:text-tertiaryYellow">Lorem, ipsum.</li>
         </ul>
 
-        <div className='space-y-2 pl-20 md:pl-8 lg:pl-4 pt-2'>
+        <div className='space-y-2 pl-20 md:pl-8 lg:pl-4 pt-6'>
         <div className='flex gap-2'>
             <Image
                 src='/footer2.png'

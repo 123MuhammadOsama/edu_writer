@@ -13,8 +13,7 @@ import Counter from '@/components/Counter';
 
 function Home() {
   return (
-    <div className="w-full overflow-hidden">
-      {/*  */}
+    <div className=" overflow-hidden w-screen">
       <Hero />
       <Counter />
       <Writers />
