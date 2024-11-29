@@ -13,12 +13,12 @@ const Experince1 = () => {
       <div className='flex'>
         {/* content */}
         <div className='space-y-5 lg:space-y-2 2xl:space-y-5 mt-10 h-auto'>
-            <h3 className='font-bold text-[22px] lg:text-[24px]'>Choose Your  <span className='text-red-500'>WCommunication Style</span></h3>
+            <h3 className='font-bold text-[22px] lg:text-[24px]'>Choose Your  <span className='text-red-500'>Communication Style</span></h3>
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>Whether you're up for a quick chat or prefer a thorough message, connecting with us is a piece of cake! Reach out via our user-friendly Chabot, drop us a message on WhatsApp, or just shoot us a detailed email. Want to keep things simple? Fill out our quick-start form then.</p>
             <h3 className='font-bold text-[22px] lg:text-[24px]'>Enjoy a <span className='text-red-500'>Free Consultation</span></h3>
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>Once you reach out, our super supportive customer service team will provide you with a free consultation! We’ll dig deep into your assignment details, answer your questions & discuss how we can best assist you.</p>
             <h3 className='font-bold text-[22px] lg:text-[24px]'>Secure Your 
-            <span className='text-red-500'>A+ with Ease</span></h3>
+            <span className='text-red-500'> A+ with Ease</span></h3>
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>After yoYou can secure your order with just a half payment, and then we’ll assign a top-notch writer to your project. Throughout the process, you’ll have the opportunity to collaborate, ensuring that the final result aligns with your expectations and puts you on the path to perfect scores!</p>
             
         </div>

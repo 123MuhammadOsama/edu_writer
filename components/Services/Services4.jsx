@@ -171,7 +171,7 @@ function Services4() {
         <div className="w-full flex-1 flex justify-center md:flex-row items-center">
           <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
             <div className="font-bold text-3xl text-center">
-            Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
+            Honouring 10+ Years of Scholarly Success!
             </div>
             <p className="text-center mt-2 mb-8 text-[14px] lg:text-[16px]">
             Explore our hallmarks of achievement that reflect our commitment to quality and expertise!

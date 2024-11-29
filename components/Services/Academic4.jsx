@@ -5,35 +5,35 @@ const Academic4 = () => {
 
     const challenges = [
         {
-          title: "Trouble Choosing the Right Topic? Let Us Spark Your Inspiration!",
+          title: "Trouble Choosing the Right Topic? Let Us Spark Your Inspiration",
           description: [
             "Getting started on your thesis is the hardest step, especially when faced with endless topic possibilities. Picking the wrong one can mean countless hours of wasted work, frustration, and, let’s face it, starting over. You want a topic that’s relevant, researchable, and engaging—but figuring that out alone can be a nightmare.",
             "That’s where we come in. If you’ve ever thought, “Can someone just help me write a thesis that hits all the marks?”—our experts are here for you! With personalized support, we’ll help you choose a topic that aligns with your academic goals and research interests. So, why worry? Trust us to find that perfect balance, give you that strong start and peace of mind from day one!"
           ]
         },
         {
-            title: "Lost in the Research Process? We’ll Clear the Path!",
+            title: "Lost in the Research Process? We’ll Clear the Path",
             description: [
               "Finding credible, relevant sources to back up your thesis can be challenging, especially if your topic is highly niched, complex or unconventional. Not to mention, quality research takes time, organisation, and a discerning eye to sort through countless studies, articles, and papers. It’s easy to feel overwhelmed, buried in research that just doesn’t seem to fit.",
               "However, don’t panic—expert thesis writing help got your back. Our skilled team knows where and how to look for credible sources that align perfectly with your thesis. We’ll gather the most relevant data on your behalf, giving you a solid research base without wasting hours scrolling through academic databases. So, just sit back and relax. With us in your corner, you'll receive a well-researched, high-quality paper that will strengthen your arguments and impress your professors!"
             ]
           },
         {
-          title: "Struggling with Your Thesis Statement? Let's Build a Solid Foundation!",
+          title: "Struggling with Your Thesis Statement? Let's Build a Solid Foundation",
           description: [
             "Creating a clear, impactful thesis statement is crucial, but it’s not easy. This single sentence has to capture the essence of your research and set the direction for your entire paper. It’s no wonder many students find themselves stuck here, frustratingly screaming, &quot; Please help me write a thesis statement that stands out! &quot; A weak thesis statement can spoil your entire project from the start.",
-            "&quot;"
+            "With EduWriters.UK, you won’t have to worry about crafting the perfect thesis statement alone. Our experts can either help you refine your ideas or craft a statement that effectively summarises your research goals and sets the tone for a strong thesis. So, what’s the delay for? Ditch the self-doubt, choose our master thesis help, and get ready to shine!"
           ]
         },
         {
-          title: "Battling with Structure and Organisation? We'll Bring Order to the Chaos!",
+          title: "Battling with Structure and Organisation? We'll Bring Order to the Chaos",
           description: [
             "Once you start writing, it becomes clear just how important structure is. From literature review to methodology, each section must be meticulously organised to flow logically. If your thesis lacks structure, it can confuse your readers and weaken your arguments. Yet, figuring out what goes where often leaves students second-guessing.",
             "Our thesis dissertation help platform specialize in creating clear, organised frameworks tailored to your demands. By outlining and arranging each section, we ensure your research is presented logically, making your thesis easier to follow and stronger overall. So, why struggle alone? When we handle the organisation, you’re left with a cohesive, compelling thesis that’s easy to navigate from start to finish."
           ]
         },
         {
-          title: "Can’t Handle the Pressure of Deadlines? Breathe Easy, We've Got This!",
+          title: "Can’t Handle the Pressure of Deadlines? Breathe Easy, We've Got This",
           description: [
             "Balancing deadlines with other responsibilities is one of the most stressful parts of thesis writing. Procrastination, other academic tasks, or just plain burnout can cause delays, making it difficult to meet submission dates. Missing a deadline can have serious academic consequences, which only adds to the pressure. ",
             "Let us handle the heavy lifting! With top-tier thesis writing help UK services, you’ll never have to worry about missing another deadline. Our team is accustomed to working with tight schedules and delivering high-quality work on time. By handing over the reins, you can meet every deadline without sacrificing sleep or peace of mind."

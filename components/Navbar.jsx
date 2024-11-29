@@ -21,14 +21,14 @@ const Navbar = () => {
   }, []);
 
   const services = [
-    { name: "Service 1", link: "/services/assignment-writing-services" },
-    { name: "Service 2", link: "/services/dissertation-writing-help" },
-    { name: "Service 3", link: "/services/write-my-essay" },
-    { name: "Service 4", link: "/services/thesis-writing-help" },
-    { name: "Service 5", link: "/services/coursework-writing-help" },
-    { name: "Service 6", link: "/services/research-paper-help" },
-    { name: "Service 7", link: "/services/case-study-help" },
-    { name: "Service 8", link: "/services/editing-and-proofreading-services" },
+    { name: "Assignment Writing Services", link: "/services/assignment-writing-services" },
+    { name: "Dissertation Writing Help", link: "/services/dissertation-writing-help" },
+    { name: "Write My Essay", link: "/services/write-my-essay" },
+    { name: "Thesis Writing Help", link: "/services/thesis-writing-help" },
+    { name: "Coursework Writing Help", link: "/services/coursework-writing-help" },
+    { name: "Research Paper Help", link: "/services/research-paper-help" },
+    { name: "Case Study Help", link: "/services/case-study-help" },
+    { name: "Editing and Proofreading Services", link: "/services/editing-and-proofreading-services" },
   ];
 
   return (
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Links Section (Shown on lg and above) */}
-        <div className="hidden lg:flex items-center space-x-2 lg:text-lg xl:text-xl">
+        <div className="hidden lg:flex items-center lg:space-x-2 2xl:space-x-12 lg:text-lg xl:text-xl">
           <Link
             href="/about"
             className="text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2"
@@ -175,13 +175,34 @@ const Navbar = () => {
           >
             About Us
           </Link>
-          <Link
-            href="/services"
-            className="md:text-md font-medium hover:text-secondaryRed"
-            onClick={() => setIsSidebarOpen(false)}
-          >
-            Services
-          </Link>
+          
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="text-sm xl:text-lg font-medium hover:text-[#fa2a5e] pb-2 flex items-center space-x-1"
+            >
+              <span>Services</span>
+              <ChevronDownIcon height={16} width={16} />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 w-48 bg-white shadow-lg border rounded-md mt-2 z-50">
+                <ul>
+                  {services.map((service, index) => (
+                    <li key={index} className="border-b last:border-0">
+                      <Link
+                        href={service.link}
+                        className="block px-3 py-1 text-sm hover:bg-gray-100 hover:text-[#fa2a5e]"
+                        onClick={() => setIsDropdownOpen(false)} // Close dropdown on link click
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
           <Link
             href="/contactus"
             className="md:text-md font-medium hover:text-secondaryRed"

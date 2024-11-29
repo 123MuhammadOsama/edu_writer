@@ -48,7 +48,7 @@ function Writers() {
     return (
         <div className="flex flex-col justify-center items-center mt-10 md:mx-0 mx-5">
             <div className="flex flex-col justify-center items-center gap-1">
-            <h2 className="text-[26px] lg:text-[28px] font-bold mb-10 text-center ">Take the Content from <span className="text-secondaryRed"> EduWritersUK</span> Home Page</h2>
+            <h2 className="text-[26px] lg:text-[28px] font-bold mb-10 text-center ">Meet the<span className="text-secondaryRed"> Creative Minds</span> at Your Service!</h2>
             <p className=" text-[14px] lg:text-[16px] mb-10 text-center mx-auto">Behind Every Masterpiece is a Team of Geniuses You Didn&apos;t Know You Needed, but Can&apos;t Live Without—Delivering Quality with Creativity, Precision, and a Student-first Approach!</p>
             </div>
             <div className="md:w-fit md:justify-center md:items-center md:mx-auto  mx-12 flex ">

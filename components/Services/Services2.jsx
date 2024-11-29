@@ -78,7 +78,7 @@ function Services2() {
             text: "Nothing but the real deal here! Every dissertation is crafted from scratch, guaranteeing work that’s fresh, unique, and your’s—because originality is in our DNA."
         },
         {
-            heading: "24/Support On-Demand:",
+            heading: "Support On-Demand:",
             text: "We’re here on your schedule! Our team’s available around the clock, so whenever that tricky question hits, you know exactly where to go. Late-night homework crisis? Consider them handled."
         }
     ];
@@ -137,7 +137,7 @@ function Services2() {
                 {/* Card Timer Section */}
                 <div className="w-full flex-1 flex justify-center md:flex-row items-center">
                     <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
-                        <div className="font-bold text-3xl text-center">10+ Years of Scholarly Success!</div>
+                        <div className="font-bold text-3xl text-center">Honouring 10+ Years of Scholarly Success!</div>
                         <p className="text-center mt-2 mb-8 text-[14px] lg:text-[16px]">
                             Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
                         </p>

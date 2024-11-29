@@ -8,6 +8,7 @@ import Academic from "./Academic4";
 import Experince from "./Experince4";
 import Academic1 from "./Academic1";
 import Experince1 from "./Experince1";
+import FAQ1 from "../Faqs1";
 
 function Services1() {
     const [assignments, setAssignments] = useState(0);
@@ -162,9 +163,9 @@ function Services1() {
             {/* Other Sections */}
             <div className="mt-16">
                 <CTA1
-                    heading="Get  That Fits Your Life and "
+                    heading="Get "
                     span="Professional Support"
-                    heading2="Lifts Your Grades!"
+                    heading2=" That Lifts Your Grades!"
                     paragraph="From Last-Minute Rescues to Long-Term Wins—We're Your Ultimate Assignment Ally, Crafting Award-worthy Masterpieces with Zero Stress and 100% Precision."
                 />
             </div>
@@ -178,7 +179,7 @@ function Services1() {
                 <Writers />
             </div>
             <div className="mt-16">
-                <Faqs />
+                <FAQ1 />
             </div>
         </div>
     );

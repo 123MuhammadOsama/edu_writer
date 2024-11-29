@@ -18,7 +18,7 @@ const Experince2 = () => {
             <h3 className='font-bold text-[22px] lg:text-[24px]'>Start with a Free,  <span className='text-red-500'>No-Pressure Chat!</span></h3>
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>Our team offers a free, no-pressure consultation, so you can get answers, options, and expert Our dedicated team is here to provide a free, no-strings-attached consultation! We’ll dig into your assignment needs, walk you through your options, and answer any questions you might have. It’s all about understanding how we can help you best—no pressure, just solid guidance for your success.</p>
             <h3 className='font-bold text-[22px] lg:text-[24px]'>Kickstart Your Success with 
-            <span className='text-red-500'>Half the Payment!</span></h3>
+            <span className='text-red-500'> Half the Payment!</span></h3>
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>After we’ve mapped out your assignment needs, securing your spot is easy. Just make a 50% payment, and we’ll match you with an expert ready to bring your project to life. Stay connected, collaborate, and watch your project evolve exactly how you envision—right up to an A+ finish!</p>
             
         </div>

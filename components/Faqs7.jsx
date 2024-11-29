@@ -40,7 +40,7 @@ const FAQ7 = () => {
     },
     {
       question: 'What payment options do you offer?',
-      answer: `e offer multiple secure payment methods, including credit cards, PayPal, and bank transfers. To make it easier for students, you can secure your order with 50% upfront and pay the rest upon completion. Trust us for authentic help to write case study assignments.`,
+      answer: `We offer multiple secure payment methods, including credit cards, PayPal, and bank transfers. To make it easier for students, you can secure your order with 50% upfront and pay the rest upon completion. Trust us for authentic help to write case study assignments.`,
     },
   ];
 
