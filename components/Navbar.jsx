@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <section className="w-full fixed top-0 z-50 bg-white">
-      <div className="flex justify-between items-center border-b px-4 lg:px-10">
+      <div className="flex justify-between items-center border-b px-2 lg:px-2 xl:px-10 2xl:px-16">
         {/* Logo Section */}
         <div className="flex-shrink-0">
           <Link href="/">
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Links Section (Visible on Large Screens) */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6 2xl:space-x-10">
           <Link href="/about" className="hover:text-[#fa2a5e]">
             About Us
           </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
                       <Link
                         href={service.link}
                         className="block px-4 py-2 hover:bg-gray-100 hover:text-[#fa2a5e]"
-                        onClick={() => setIsDropdownOpen(false)}
+                        onClick={() => setIsDropdownOpen(false)} // Close dropdown
                       >
                         {service.name}
                       </Link>
@@ -165,38 +165,52 @@ const Navbar = () => {
               </svg>
             </button>
             <nav className="space-y-4">
-              <Link href="/about" className="block hover:text-secondaryRed">
+              <Link
+                href="/about"
+                className="block hover:text-secondaryRed"
+                onClick={() => setIsSidebarOpen(false)} // Close sidebar
+              >
                 About Us
               </Link>
-              
-          {/* Services Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen((prev) => !prev)}
-              className="hover:text-[#fa2a5e] flex items-center space-x-1"
-            >
-              <span>Services</span>
-              <ChevronDownIcon className="h-4 w-4" />
-            </button>
-            {isDropdownOpen && (
-              <div className="absolute top-full left-0 w-56 bg-white shadow-md border rounded-md mt-2">
-                <ul className="divide-y">
-                  {services.map((service, index) => (
-                    <li key={index}>
-                      <Link
-                        href={service.link}
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#fa2a5e]"
-                        onClick={() => setIsDropdownOpen(false)}
-                      >
-                        {service.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+
+              {/* Services Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() =>
+                    setIsSidebarDropdownOpen((prev) => !prev)
+                  }
+                  className="hover:text-[#fa2a5e] flex items-center space-x-1"
+                >
+                  <span>Services</span>
+                  <ChevronDownIcon className="h-4 w-4" />
+                </button>
+                {isSidebarDropdownOpen && (
+                  <div className="absolute top-full left-0 w-56 bg-white shadow-md border rounded-md mt-2">
+                    <ul className="divide-y">
+                      {services.map((service, index) => (
+                        <li key={index}>
+                          <Link
+                            href={service.link}
+                            className="block px-4 py-2 hover:bg-gray-100 hover:text-[#fa2a5e]"
+                            onClick={() => {
+                              setIsSidebarDropdownOpen(false); // Close dropdown
+                              setIsSidebarOpen(false); // Close sidebar
+                            }}
+                          >
+                            {service.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-              <Link href="/contactus" className="block hover:text-secondaryRed">
+
+              <Link
+                href="/contactus"
+                className="block hover:text-secondaryRed"
+                onClick={() => setIsSidebarOpen(false)} // Close sidebar
+              >
                 Contact Us
               </Link>
             </nav>

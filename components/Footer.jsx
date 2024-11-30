@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className='bg-black p-10 lg:p-2 flex flex-col lg:flex-row text-white '>
+    <div className='bg-black p-10 lg:p-2 2xl:pb-12 flex flex-col lg:flex-row text-white '>
       {/* lefttt */}
       <div className='items-center justify-center space-y-4 w-auto lg:w-[500px] xl:w-[800px] 2xl:w-1/2'>
         <div>
@@ -67,7 +67,7 @@ const Footer = () => {
   </li>
         </ul>
 
-        <div className='space-y-2 pl-20 md:pl-8 lg:pl-4 pt-6'>
+        <div className='space-y-2 pl-18 sm:pl-48 md:pl-8 lg:pl-4 pt-6'>
         <div className='flex gap-2'>
             <Image
                 src='/footer2.png'

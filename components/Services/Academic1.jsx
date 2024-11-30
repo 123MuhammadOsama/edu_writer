@@ -79,7 +79,7 @@ const Academic1 = () => {
         {challenges.map((challenge, index) => (
           <div key={index} className="bg-white p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
-    {challenge.title}:
+    {challenge.title}!
 </h2>
 
             {challenge.description.map((paragraph, idx) => (

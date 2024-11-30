@@ -17,9 +17,9 @@ function CTA1({ heading, span, heading2, paragraph }) {
             {paragraph}
           </p>
           <div className="flex flex-row pt-4 md:mx-0 mx-1 gap-4 md:mr-2 md:justify-start md:items-center">
-            {/* <TawktoButton  mdWidth={300} Width={150} Height={100}/> */}
+           
 
-            <button className="bg-blue-500 flex items-center  font-bold text-white px-6 sm:px-8 md:px-10 lg:px-4
+            <button className="bg-blue-500 flex items-center  font-bold text-white px-2 sm:px-8 md:px-10 lg:px-4
              py-3  rounded-xl hover:bg-blue-900 group">
             <span className="transform transition-transform mr-2 sm:mr-3 duration-500 group-hover:-translate-x-2">
                 LIVE CHAT
@@ -27,10 +27,10 @@ function CTA1({ heading, span, heading2, paragraph }) {
             <IoPaperPlaneOutline className="transform transition-transform duration-500 group-hover:translate-x-2 text-xl" />
         </button>
 
-        {/* py-2 px-2 lg:w-40 md:w-36 md:min-h-max w-[10rem] h-[3rem] */}
+        
 
             <button className="border-2 font-bold border-secondaryRed text-red hover:bg-secondaryRed text-secondaryRed
-             hover:text-white py-3 px-6 sm:px-8 md:px-10 lg:px-4 rounded-xl flex flex-row justify-center transition-all group-hover:translate-x-1">
+             hover:text-white py-3 px-2 sm:px-8 md:px-10 lg:px-4 rounded-xl flex flex-row justify-center transition-all group-hover:translate-x-1">
               Order Now
               <div>
                 <ArrowRight className="hover:translate-x-1 transition-all" />
