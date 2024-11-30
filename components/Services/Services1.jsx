@@ -109,10 +109,10 @@ function Services1() {
             {/* Features Section */}
             <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-16">
                 <div className="flex-1">
-                    <h2 className="font-bold text-xl lg:text-2xl">
+                    <h2 className="font-bold text-[26px] lg:text-[28px] lg:text-2xl">
                         The Edge You Need: Reliable, Quality-Driven UK Assignment Writing Service
                     </h2>
-                    <p className="mt-4 text-sm md:text-base text-textColor">
+                    <p className="mt-4 text-[14px] lg:text-[16px] text-textColor">
                         Effortlessly boost your grades with England’s finest pros—quick, dependable, and prepared for any challenge. So, why wait? Swap stress for success and watch your academic goals come to life!
                     </p>
                     <ul className="mt-6 space-y-6">

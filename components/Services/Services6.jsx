@@ -109,24 +109,23 @@ function Services6() {
   ];
 
   return (
-    <div className="px-4 lg:px-8 xl:px-16 2xl:px-32 mt-10 w-full overflow-hidden">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-24 mt-20 w-full overflow-hidden">
       {/* First Section */}
-      <div className="flex flex-col lg:flex-row mt-12 lg:mt-24 items-center">
+      <div className="flex flex-col lg:flex-row items-center mt-12 lg:mt-24">
         <div className="w-full xl:w-[750px] 2xl:w-[900px] lg:mr-12 text-center lg:text-left mb-8 lg:mb-0">
-          <h1 className="text-[40px] md:text-5xl font-bold text-textColor leading-tight">
+          <h1 className="text-[40px] font-bold text-textColor leading-tight">
           High-quality <span className="text-red-500">Research Paper Writing </span>Service for   
             <span className="text-primaryBlue"> Stress-free Success!</span>
           </h1>
           <p className="mt-4 text-base text-[14px] lg:text-[16px] text-textColor">
           With our specialised research paper help, you’ll get expertly written, polished, ready-to-submit masterpieces that make the grade without the late-night grind. Because you deserve more than just a paper—you deserve peace of mind! 
           </p>
-          <div className="mt-6 mx-auto lg:mx-0 w-3/4 lg:w-full">
+          <div className="mt-10">
             <Image
               src="/Reviews.png"
-              alt="Reviews"
-              width={600}
-              height={100}
-              className="w-auto"
+              width="600"
+              height="400"
+              alt="Trust Pilot"
             />
           </div>
         </div>
@@ -142,77 +141,61 @@ function Services6() {
       </div>
 
       {/* Section Container */}
-      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-28 mx-20">
+      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 mt-16">
         {/* Content Section */}
-        <div className="flex-1 2xl:pt-14">
+        <div className="flex-1 ">
           <h2 className="font-bold text-[26px] lg:text-[28px]">
           Need A+? Get Grade-Saving Research Help for Easy Wins!
 
           </h2>
-          <p className="mt-4 text-[14px] lg:text-[16px] w-auto 2xl:w-[1000px] xl:w-[600px]">
+          <p className="mt-4 text-[14px] lg:text-[16px] text-textColor">
           From research pros to writing wizards you didn’t know you needed, but can’t live without! Just say “Help write my research paper,” relax and let’s handle all the details with creativity, precision, and a student-first approach, delivering excellence every time!
           </p>
           {/* Additional Content */}
           <ul className="mt-6 space-y-6">
-            {content.map((item, i) => (
-              <li key={i} className="flex items-start gap-4">
-                <Image
-                  src={`/service${i + 1}.png`}
-                  alt={`Service icon ${i + 1}`}
-                  width={50}
-                  height={50}
-                  className="flex-shrink-0"
-                />
-                <div className="w-auto 2xl:w-[900px] xl:w-[600px]">
-                  <h3 className="text-[16px] font-bold lg:text-[18px]">
-                    {item.heading}
-                  </h3>
-                  <p className="text-[14px] lg:text-[16px]">{item.text}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+                        {content.map((item, i) => (
+                            <li key={i} className="flex items-start gap-4">
+                                <Image 
+                                    src={`/service${i + 1}.png`} 
+                                    alt={`Service icon ${i + 1}`} 
+                                    width={50} 
+                                    height={50} 
+                                    className="flex-shrink-0" 
+                                />
+                                <div>
+                                    <h3 className="text-base md:text-lg font-bold">{item.heading}</h3>
+                                    <p className="text-sm md:text-base">{item.text}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
         </div>
 
         {/* Card Timer Section */}
-        <div className="w-full flex-1 flex justify-center md:flex-row items-center">
-          <div className="shadow-lg border rounded-xl p-8 flex flex-col items-center w-full max-w-md h-[600px] md:h-auto">
-            <div className="font-bold text-3xl text-center">
-            Honouring 10+ Years of Scholarly Success!
-            </div>
-            <p className="text-center mt-2 mb-8 text-[14px] lg:text-[16px]">
-            Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
-
-            </p>
-            <div className="space-y-16">
-              {[
-                {
-                  title: 'Expert Assignment Specialists',
-                  count: assignments,
-                  suffix: '+',
-                },
-                {
-                  title: 'Successful Projects Completed',
-                  count: projects,
-                  suffix: '+',
-                },
-                {
-                  title: 'Student Satisfaction Rate',
-                  count: customers,
-                  suffix: '%',
-                },
-              ].map(({ title, count, suffix }, idx) => (
-                <div key={idx} className="flex flex-col items-center">
-                  <span className="text-6xl text-primaryBlue font-bold">
-                    {Math.floor(count)}
-                    {suffix}
-                  </span>
-                  <p className="text-center">{title}</p>
+        <div className="w-full lg:w-1/2 flex flex-col items-center">
+                    <div className="shadow-lg border rounded-xl p-6 sm:p-8 flex flex-col items-center w-full max-w-md">
+                        <h3 className="text-2xl md:text-3xl font-bold text-center">
+                            10+ Years of Scholarly Success!
+                        </h3>
+                        <p className="mt-2 mb-6 text-sm md:text-base text-center">
+                            Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
+                        </p>
+                        <div className="space-y-6">
+                            {[
+                                { title: "Expert Assignment Specialists", count: assignments, suffix: "+" },
+                                { title: "Successful Projects Completed", count: projects, suffix: "+" },
+                                { title: "Student Satisfaction Rate", count: customers, suffix: "%" },
+                            ].map(({ title, count, suffix }, idx) => (
+                                <div key={idx} className="text-center">
+                                    <span className="text-xl md:text-2xl lg:text-3xl text-primaryBlue font-bold">
+                                        {Math.floor(count)}{suffix}
+                                    </span>
+                                    <p className="text-sm md:text-base">{title}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Other Sections */}
