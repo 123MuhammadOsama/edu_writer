@@ -16,9 +16,36 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "World's Leading Edu Writers UK - About Us",
+  slug: 'home',
+  serviceName: "World's Leading Edu Writers UK",
+  path: '/',
+  title: 'Professional Essay Writing Services | Edu Writers UK For Hire',
   description:
-    'Let us help you write academic papers with real pros and reduce your stress with the assistance of our skilled edu writers.',
+    'Hand over your stress to Edu Writers UK at fair costs. We provide the best assistance, 100% confidentiality, plagiarism-free content & unlimited revisions.',
+  last_modified: '17/11/2024',
+  isoDate: new Date('10/23/2024').toISOString(),
+  alternates: {
+    canonical: 'https://eduwriters.com',
+  },
+  openGraph: {
+    title: 'Professional Essay Writing Services | Edu Writers UK For Hire',
+    description:
+      'Hand over your stress to Edu Writers UK at fair costs. We provide the best assistance, 100% confidentiality, plagiarism-free content & unlimited revisions.',
+    locale: 'en_US',
+    type: 'article',
+    publishedTime: '2024-11-11T00:00:00.000Z',
+    authors: 'Edu Writers Team',
+    site_name: 'Edu Writers',
+    url: 'https://eduwriters.com',
+    images: [
+      {
+        url: 'https://eduwriters.com/_next/image?url=%2FLogo.png&w=256&q=75',
+        width: 1200,
+        height: 628,
+        type: 'image/png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
