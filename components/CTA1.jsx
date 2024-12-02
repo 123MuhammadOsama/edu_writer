@@ -13,7 +13,7 @@ function CTA1({ heading, span, heading2, paragraph }) {
           <div className="2xl:text-28px md:text-[24px] text-2xl font-bold md:py-2 sm:px-2 px-0 md:text-start text-center md:w-full">
             {heading} <span className="text-secondaryRed">{span}</span> {heading2}
           </div>
-          <p className="py-1 sm:mx-2 mx-0 w-full 2xl:w-[600px]  text-[14px] lg:text-[16px]">
+          <p className="py-1 sm:mx-2 mx-0 w-full xl:w-[450px] 2xl:w-[600px]  text-[14px] lg:text-[16px]">
             {paragraph}
           </p>
           <div className="flex flex-row pt-4 md:mx-0 mx-1 gap-4 md:mr-2 md:justify-start md:items-center">
@@ -38,7 +38,7 @@ function CTA1({ heading, span, heading2, paragraph }) {
             </button>
           </div>
         </div>
-        <div className="absolute bottom-0 right-5 xl:right-20 2xl:right-28">
+        <div className="absolute bottom-0 right-5 xl:right-10 2xl:right-28">
           <Image
             src="/Hero_Image.png"
             width="500"
