@@ -21,7 +21,7 @@ export const metadata = {
     publishedTime: '2024-11-11T00:00:00.000Z',
     authors: 'Edu Writers Team',
     site_name: 'Edu Writers',
-    url: 'http://eduwriters.uk/_next/thesis-writing-help',
+    url: 'https://eduwriters.uk/_next/image?url=%2FLogo.png&w=256&q=75',
     images: [
       {
         url: 'Logo.png',

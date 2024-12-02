@@ -27,7 +27,7 @@ export const metadata = {
         url: 'https://eduwriters.uk/_next/image?url=%2FLogo.png&w=256&q=75',
         width: 1200,
         height: 628,
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },

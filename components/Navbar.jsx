@@ -37,13 +37,13 @@ const Navbar = () => {
     <section className="w-full fixed top-0 z-50 bg-white">
       <div className="flex justify-between items-center border-b px-2 lg:px-2 xl:px-10 2xl:px-16">
         {/* Logo Section */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 py-2">
           <Link href="/">
             <Image
               src="/Logo.png"
               alt="logo"
-              width={240}
-              height={160}
+              width={200}
+              height={200}
               className="object-contain"
             />
           </Link>
