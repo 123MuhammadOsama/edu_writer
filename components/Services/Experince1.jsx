@@ -19,7 +19,7 @@ const Experince1 = () => {
             <p className='text-[14px] lg:text-[16px] max-w-4xl'>Once you reach out, our super supportive customer service team will provide you with a free consultation! We’ll dig deep into your assignment details, answer your questions & discuss how we can best assist you.</p>
             <h3 className='font-bold text-[22px] lg:text-[24px]'>Secure Your 
             <span className='text-red-500'> A+ with Ease</span></h3>
-            <p className='text-[14px] lg:text-[16px] max-w-4xl'>After yoYou can secure your order with just a half payment, and then we’ll assign a top-notch writer to your project. Throughout the process, you’ll have the opportunity to collaborate, ensuring that the final result aligns with your expectations and puts you on the path to perfect scores!</p>
+            <p className='text-[14px] lg:text-[16px] max-w-4xl'>After You can secure your order with just a half payment, and then we’ll assign a top-notch writer to your project. Throughout the process, you’ll have the opportunity to collaborate, ensuring that the final result aligns with your expectations and puts you on the path to perfect scores!</p>
             
         </div>
         {/* image */}

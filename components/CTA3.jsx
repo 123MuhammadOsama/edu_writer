@@ -11,7 +11,7 @@ function CTA3() {
           <div className="flex flex-col justify-start items-start 2xl:ml-20 mt-1 lg:max-w-6xl md:w-[900px]  max-w-full ">
           <h2 className=" text-[28px] font-bold py-2  ">Facts About Our <span className="text-secondaryRed">UK Writing Services!</span></h2>
           <div className="lg:text-[16px] md:text-[15px] text-[14px]  md:w-[250px] lg:w-full 2xl:w-[90%]">
-            <p>EduWritersUK is not just about ticking off your assignments—it is about giving you total peace of mind. We know juggling deadlines, research, & everyday life can be a lot. That  &apos;s why we&apos;re here to make your worries vanish with original, timely, and flawless showstoppers.</p>
+            <p>EduWritersUK is not just about ticking off your assignments—it is about giving you total peace of mind. We know juggling deadlines, research, & everyday life can be a lot. That  &apos;s why we're here to make your worries vanish with original, timely, and flawless showstoppers.</p>
             <p>Designed around you, we offer a seamless experience from start to finish, smashing deadlines while guaranteeing outstanding results. Need a change? We're on it! Craving an essay writing service that puts your priorities first? Stop searching—time to get ahead without breaking a sweat!
             </p>
 

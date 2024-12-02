@@ -11,7 +11,7 @@ function Scrollsection() {
         </h2>
 
         <p className="mt-5 lg:w-[88%] md:w-[98%] p-1 md:mx-auto lg:px-10 ">
-          Struggling with endless assignments, essays, and deadlines? We've all been there. But at Edu Writers UK, we believe success shouldn&apos;t come with sleepless nights, stress-induced caffeine binges, and that "help me!" look on your face. Fear not—that's why we&apos;re here to be your &quot;get-out-of-jail-free&quot; card, and basically, your new best friend when things get tough!
+          Struggling with endless assignments, essays, and deadlines? We've all been there. But at Edu Writers UK, we believe success shouldn&apos;t come with sleepless nights, stress-induced caffeine binges, and that "help me!" look on your face. Fear not—that's why we're here to be your &quot;get-out-of-jail-free&quot; card, and basically, your new best friend when things get tough!
 
         </p>
 
@@ -31,7 +31,7 @@ function Scrollsection() {
               </div>
 
               <p className="mt-2 text-[16px]">
-                Our talented assignment pros and brilliant essay writers UK team know how to craft papers that&apos;ll leave your professors in awe. With each assignment, we ensure perfection, accuracy, and creativity that matches your academic level and unique voice. Whether it's a research paper, an essay, or a complex case study, we've got the tools and the expertise to handle it all. We&apos;re not just writers; we&apos;re your academic allies, dedicated to helping you succeed.
+                Our talented assignment pros and brilliant essay writers UK team know how to craft papers that&apos;ll leave your professors in awe. With each assignment, we ensure perfection, accuracy, and creativity that matches your academic level and unique voice. Whether it's a research paper, an essay, or a complex case study, we've got the tools and the expertise to handle it all. we're not just writers; we're your academic allies, dedicated to helping you succeed.
               </p>
 
               <div className="flex flex-row py-1 gap-1">
@@ -39,7 +39,7 @@ function Scrollsection() {
                 <h3 className="font-sans font-bold text-[23px] "> Complete Care for Your Demands—We<span className="text-secondaryRed"> Handle Everything </span> !</h3>
               </div>
               <p className="mt-2 text-[16px]">
-                Helping students is our bread and butter, that&apos;s why we serve a full academic buffet. From in-depth research papers to carefully crafted essays, you name it, we handle it. With a streamlined process and a team of seasoned writers, we guarantee top-notch quality and attention to detail with every single project. We&apos;ve made academic help our mission, and our success shows in the high grades and happy clients we&apos;ve served.
+                Helping students is our bread and butter, that&apos;s why we serve a full academic buffet. From in-depth research papers to carefully crafted essays, you name it, we handle it. With a streamlined process and a team of seasoned writers, we guarantee top-notch quality and attention to detail with every single project. we've made academic help our mission, and our success shows in the high grades and happy clients we've served.
               </p>
 
               <div className="flex flex-row py-1 gap-1">
@@ -55,7 +55,7 @@ function Scrollsection() {
                 <h3 className="font-sans font-bold text-[23px] ">Discounts and Deals That Are Just Too <span className="text-secondaryRed">  Sweet to Miss! </span> </h3>
               </div>
               <p className="mt-2 text-[16px]">
-                We understand that student life can be hard on the budget. That &apos;s why we&apos;ve got deals that make it easier for you to access top-quality assignment help without breaking the bank. From seasonal discounts to first-time user deals and referral bonuses, we have options that help you save while still getting the best possible assistance.
+                We understand that student life can be hard on the budget. That &apos;s why we've got deals that make it easier for you to access top-quality assignment help without breaking the bank. From seasonal discounts to first-time user deals and referral bonuses, we have options that help you save while still getting the best possible assistance.
               </p>
 
 
@@ -78,9 +78,9 @@ function Scrollsection() {
               <ul className="list-disc pl-6 mt-4 space-y-2 text-[16px]">
 
 
-                <li><span className="font-semibold">Let the Magic Happen:</span> Once we&apos;ve got your info, our pro writers jump into action right away. No matter if it&apos;s a case study assistance request or online coursework help, every piece is tailor-made to suit your exact requirement, backed by meticulous research, sharp writing, and thorough editing. And the best part? You&apos;re never left in the dark. We keep you in the loop throughout the process, with regular updates so you know exactly how things are shaping up because communication is key. Sit back and watch the magic unfold!
+                <li><span className="font-semibold">Let the Magic Happen:</span> Once we've got your info, our pro writers jump into action right away. No matter if it&apos;s a case study assistance request or online coursework help, every piece is tailor-made to suit your exact requirement, backed by meticulous research, sharp writing, and thorough editing. And the best part? You&apos;re never left in the dark. We keep you in the loop throughout the process, with regular updates so you know exactly how things are shaping up because communication is key. Sit back and watch the magic unfold!
                 </li>
-                <li><span className="font-semibold">Get a Sneak Peek:</span> Before the final handover, you get to review a preview of your work. Why? Because we want to ensure it&apos;s exactly what you envisioned. This way, whether you&apos;ve asked us to “write an essay for me” or tackle something more complex, any tweaks or changes can be made before the final delivery—no surprises, just satisfaction. You&apos;re in charge, and we&apos;re here to make sure your work aligns perfectly with your expectations.
+                <li><span className="font-semibold">Get a Sneak Peek:</span> Before the final handover, you get to review a preview of your work. Why? Because we want to ensure it&apos;s exactly what you envisioned. This way, whether you&apos;ve asked us to “write an essay for me” or tackle something more complex, any tweaks or changes can be made before the final delivery—no surprises, just satisfaction. You&apos;re in charge, and we're here to make sure your work aligns perfectly with your expectations.
                 </li>
                 <li><span className="font-semibold">Receive Your Masterpiece:</span>Once you&apos;re completely happy with the preview, your polished file is delivered straight to your inbox, ready for submission. No fuss, no hassle—just stellar work that puts you ahead of the curve and makes you look like the genius in the room. Be it an essay, a thesis, coursework, or case study help, we ensure you shine like the star of the class!
                 </li>
@@ -92,7 +92,7 @@ function Scrollsection() {
                 </h2>
               </div>
               <p className="mt-2 text-[16px]">
-                <span className="text-4xl font-bold font-serif ">L</span>et &apos;s face it: school can be a lot to handle sometimes. If you &apos;ve ever thought, it &apos;ll be nice to just pay for research paper assistance or finish that monstrous 80-page dissertation and whatnot—you &apos;re right where you need to be. We know the feeling, and that&apos;s exactly why we&apos;re here.
+                <span className="text-4xl font-bold font-serif ">L</span>et &apos;s face it: school can be a lot to handle sometimes. If you &apos;ve ever thought, it &apos;ll be nice to just pay for research paper assistance or finish that monstrous 80-page dissertation and whatnot—you &apos;re right where you need to be. We know the feeling, and that&apos;s exactly why we're here.
 
               </p>
 
@@ -101,12 +101,12 @@ function Scrollsection() {
                 <h3 className="font-sans font-bold text-xl "> <span className="text-secondaryRed">Proven Results </span> Without the Fuss</h3> */}
               </div>
               <p className="mt-2 text-[16px]">
-                EduWritersUK offers you the best of both worlds: convenience and quality all in one place. Imagine having a skilled team of pros ready to lighten your heavy load, allowing you to focus on what really matters to you. It&apos;s not just about getting good grades but it&apos;s about making your life much easier and way less stressful. And we&apos;re like your trusty sidekick, always ready to jump in when you need a hand.
+                EduWritersUK offers you the best of both worlds: convenience and quality all in one place. Imagine having a skilled team of pros ready to lighten your heavy load, allowing you to focus on what really matters to you. It&apos;s not just about getting good grades but it&apos;s about making your life much easier and way less stressful. And we're like your trusty sidekick, always ready to jump in when you need a hand.
 
               </p>
 
               <p className="mt-2 text-[16px]">
-                So, why worry for no reason? While you&apos;re out there conquering your studies and living your life, we&apos;ll take care of the hard stuff—be it essays, assignments, projects—so you can relax. Trust us; when you choose to work with us, you&apos;re not just getting help but picking a smoother, more enjoyable academic experience. Let&apos;s roll!
+                So, why worry for no reason? While you&apos;re out there conquering your studies and living your life, we'll take care of the hard stuff—be it essays, assignments, projects—so you can relax. Trust us; when you choose to work with us, you&apos;re not just getting help but picking a smoother, more enjoyable academic experience. Let&apos;s roll!
 
               </p>
             </div>
