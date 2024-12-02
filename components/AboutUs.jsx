@@ -6,8 +6,7 @@ import CTA1 from "./CTA1";
 function AboutUs() {
     return (
         <div>
-            <div className="lg:mx-0
-             ">
+            <div className="lg:mx-0 mt-20 lg:mt-2">
       <>
 
       {/* Section 1  */}
