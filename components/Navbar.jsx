@@ -113,7 +113,7 @@ const Navbar = () => {
           {/* Email and Phone */}
           <div className="flex items-center space-x-6 pl-6">
             <a
-              href="mailto:info@example.com"
+              href="mailto:eduwriters@example.com"
               className="flex items-center space-x-2 text-sm hover:text-blue-600"
             >
               <MailIcon className="h-5 w-5" />
@@ -131,7 +131,7 @@ const Navbar = () => {
 
         {/* Order Now Button */}
         <Link href="/ordernow">
-          <button className="border-2 border-black px-4 py-2 hover:bg-secondaryRed hover:text-white rounded-lg">
+          <button className="hidden md:block border-2 border-black px-4 py-2 hover:bg-secondaryRed hover:text-white rounded-lg">
             Order Now
           </button>
         </Link>

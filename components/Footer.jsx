@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <IoMailSharp  className='text-2xl'/> <span>theassignmnethelp@gmail.com</span>
+        <IoMailSharp  className='text-2xl'/> <span>eduwriters@gmail.com</span>
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
