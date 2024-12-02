@@ -10,7 +10,7 @@ export const metadata = {
   last_modified: '17/11/2024',
   isoDate: new Date('10/23/2024').toISOString(),
   alternates: {
-    canonical: 'https://eduwriters.com/about',
+    canonical: 'https://eduwriters.uk/about',
   },
   openGraph: {
     title: "World's Leading Edu Writers UK - About Us",
@@ -21,7 +21,7 @@ export const metadata = {
     publishedTime: '2024-11-11T00:00:00.000Z',
     authors: 'Edu Writers Team',
     site_name: 'Edu Writers',
-    url: 'https://eduwriters.com/about',
+    url: 'https://eduwriters.uk/about',
     images: [
       {
         url: 'Logo.png',

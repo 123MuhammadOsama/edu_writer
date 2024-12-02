@@ -10,7 +10,7 @@ export const metadata = {
   last_modified: '17/11/2024',
   isoDate: new Date('10/23/2024').toISOString(),
   alternates: {
-    canonical: 'https://eduwriters.com/dissertation-writing-help',
+    canonical: 'https://eduwriters.uk/dissertation-writing-help',
   },
   openGraph: {
     title: 'Edu Writers UK High-Quality Dissertation Writing Help Services',
@@ -21,7 +21,7 @@ export const metadata = {
     publishedTime: '2024-11-11T00:00:00.000Z',
     authors: 'Edu Writers Team',
     site_name: 'Edu Writers',
-    url: 'http://eduwriters.com/_next/image?url=%2FLogo.png&w=256&q=75',
+    url: 'http://eduwriters.uk/_next/image?url=%2FLogo.png&w=256&q=75',
     images: [
       {
         url: 'Logo.png',

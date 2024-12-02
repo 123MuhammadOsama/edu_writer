@@ -25,7 +25,7 @@ export const metadata = {
   last_modified: '17/11/2024',
   isoDate: new Date('10/23/2024').toISOString(),
   alternates: {
-    canonical: 'https://eduwriters.com',
+    canonical: 'https://eduwriters.uk',
   },
   openGraph: {
     title: 'Professional Essay Writing Services | Edu Writers UK For Hire',
@@ -36,10 +36,10 @@ export const metadata = {
     publishedTime: '2024-11-11T00:00:00.000Z',
     authors: 'Edu Writers Team',
     site_name: 'Edu Writers',
-    url: 'https://eduwriters.com',
+    url: 'https://eduwriters.uk',
     images: [
       {
-        url: 'https://eduwriters.com/_next/image?url=%2FLogo.png&w=256&q=75',
+        url: 'https://eduwriters.uk/_next/image?url=%2FLogo.png&w=256&q=75',
         width: 1200,
         height: 628,
         type: 'image/png',

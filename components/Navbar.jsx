@@ -113,11 +113,11 @@ const Navbar = () => {
           {/* Email and Phone */}
           <div className="flex items-center space-x-6 pl-6">
             <a
-              href="mailto:eduwriters@example.com"
+              href="mailto:info@eduwriters.com"
               className="flex items-center space-x-2 text-sm hover:text-blue-600"
             >
               <MailIcon className="h-5 w-5" />
-              <span>info@example.com</span>
+              <span>info@eduwriters.com</span>
             </a>
             <a
               href="tel:+1234567890"
@@ -218,11 +218,11 @@ const Navbar = () => {
             {/* Email and Phone in Sidebar */}
             <div className="mt-6 space-y-4">
               <a
-                href="mailto:info@example.com"
+                href="mailto:info@eduwriters.com"
                 className="flex items-center space-x-2 text-sm hover:text-blue-600"
               >
                 <MailIcon className="h-5 w-5" />
-                <span>info@example.com</span>
+                <span>info@eduwriters.com</span>
               </a>
               <a
                 href="tel:+1234567890"
