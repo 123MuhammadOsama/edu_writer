@@ -67,7 +67,7 @@ const Footer = () => {
   </li>
         </ul>
 
-        <div className='space-y-2 pl-18 sm:pl-48 md:pl-8 lg:pl-4 pt-6'>
+        <div className='space-y-2 pl-20 sm:pl-56 md:pl-8 lg:pl-4 pt-6'>
         <div className='flex gap-2'>
             <Image
                 src='/footer2.png'
