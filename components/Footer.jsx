@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <FaPhoneAlt className='text-2xl' /> <span><a href='tel:+447447887335'>+44 7447 887335</a></span>
+        <FaPhoneAlt className='text-2xl' /> <span><a href='http://wa.me/+447380893208'>+44 7380 893208</a></span>
 
         </div>
       </div>
