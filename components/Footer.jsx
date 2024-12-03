@@ -30,11 +30,11 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <IoMailSharp  className='text-2xl'/> <span>info@eduwriters.uk</span>
+        <IoMailSharp  className='text-2xl'/> <span><a href='mailto:info@eduwriters.uk'>info@eduwriters.uk</a></span>
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <FaPhoneAlt className='text-2xl' /> <span>+44 7447 887335</span>
+        <FaPhoneAlt className='text-2xl' /> <span><a href='tel:+447447887335'>+44 7447 887335</a></span>
 
         </div>
       </div>

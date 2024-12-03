@@ -165,25 +165,25 @@ function Services4() {
         </div>
 
         {/* Card Timer Section */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center">
+        <div className="w-full lg:w-1/2 flex flex-col items-center ">
                     <div className="shadow-lg border rounded-xl p-6 sm:p-8 flex flex-col items-center w-full max-w-md">
-                        <h3 className="text-2xl md:text-3xl font-bold text-center mt-2 lg:mt-10 xl:mt-6 2xl:mt-4">
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-3xl font-bold text-center mt-2 lg:mt-10 xl:mt-6 2xl:mt-0">
                             10+ Years of Scholarly Success!
                         </h3>
-                        <p className="mt-2 lg:mt-10 xl:mt-6 2xl:mt-4 mb-6 lg:mb-20 2xl:mb-6 text-sm md:text-base text-center">
+                        <p className="text-xl lg:text-2xl 2xl:text-xl mt-2 lg:mt-10 xl:mt-6 2xl:mt-4 mb-6 lg:mb-20 2xl:mb-6  text-center">
                             Explore our hallmarks of achievement that reflect our commitment to quality and expertise!
                         </p>
-                        <div className="space-y-12 lg:space-y-32 2xl:space-y-12">
+                        <div className="space-y-12 lg:space-y-24 2xl:space-y-12">
                             {[
                                 { title: "Expert Assignment Specialists", count: assignments, suffix: "+" },
                                 { title: "Successful Projects Completed", count: projects, suffix: "+" },
                                 { title: "Student Satisfaction Rate", count: customers, suffix: "%" },
                             ].map(({ title, count, suffix }, idx) => (
                                 <div key={idx} className="text-center">
-                                    <span className="text-xl md:text-2xl lg:text-6xl text-primaryBlue font-bold">
+                                    <span className="text-xl md:text-2xl lg:text-6xl 2xl:text-4xl text-primaryBlue font-bold">
                                         {Math.floor(count)}{suffix}
                                     </span>
-                                    <p className="text-2xl md:text-base">{title}</p>
+                                    <p className="text-2xl md:text-base lg:text-2xl 2xl:text-lg">{title}</p>
                                 </div>
                             ))}
                         </div>

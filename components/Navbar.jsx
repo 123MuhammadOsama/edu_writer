@@ -120,11 +120,11 @@ const Navbar = () => {
               <span>info@eduwriters.uk</span>
             </a>
             <a
-              href="tel:+1234567890"
+              href="tel:+447447887335"
               className="flex items-center space-x-2 text-sm hover:text-green-600"
             >
               <PhoneIcon className="h-5 w-5" />
-              <span>+1(123)456-7890</span>
+              <span>+44 7447 887335</span>
             </a>
           </div>
         </div>
