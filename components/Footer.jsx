@@ -13,12 +13,12 @@ const Footer = () => {
     <div className='bg-black p-10 lg:p-2 2xl:pb-12 flex flex-col lg:flex-row text-white '>
       {/* lefttt */}
       <div className='items-center justify-center space-y-4 w-auto lg:w-[500px] xl:w-[800px] 2xl:w-1/2'>
-        <div>
+        <div className='pl-10'>
             <Image
               src='/Logo.png'
               alt='Edu-writers'
-              height='400'
-              width='400'
+              height='200'
+              width='200'
             />
         </div>
         <div className='pl-0 lg:pl-10'>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>
-        <IoMailSharp  className='text-2xl'/> <span>info@eduwriters.com</span>
+        <IoMailSharp  className='text-2xl'/> <span>info@eduwriters.uk</span>
         </div>
 
         <div className='flex gap-2 pl-0 lg:pl-10'>

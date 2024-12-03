@@ -113,11 +113,11 @@ const Navbar = () => {
           {/* Email and Phone */}
           <div className="flex items-center space-x-6 pl-6">
             <a
-              href="mailto:info@eduwriters.com"
+              href="mailto:info@eduwriters.uk"
               className="flex items-center space-x-2 text-sm hover:text-blue-600"
             >
               <MailIcon className="h-5 w-5" />
-              <span>info@eduwriters.com</span>
+              <span>info@eduwriters.uk</span>
             </a>
             <a
               href="tel:+1234567890"
